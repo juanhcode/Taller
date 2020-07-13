@@ -1,9 +1,9 @@
 /*Nombre de archivo: Fecha.cpp
-Versión: 0.1
-Fecha de creación: 27/06/2020
-Fecha de última de moficación: 06/07/2020
-Autor: Miguel Ángel Askar Rodríguez - 201918564
-Correos electrónicos: miguel.askar@correounivalle.edu.co
+Versiï¿½n: 0.1
+Fecha de creaciï¿½n: 27/06/2020
+Fecha de ï¿½ltima de moficaciï¿½n: 06/07/2020
+Autor: Miguel ï¿½ngel Askar Rodrï¿½guez - 201918564
+Correos electrï¿½nicos: miguel.askar@correounivalle.edu.co
 */
 
 #include "Fecha.h"

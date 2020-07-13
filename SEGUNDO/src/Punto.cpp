@@ -2,12 +2,12 @@
   Nombre: Punto.cpp
   Autor: IPOO - Univalle Tulua
   Fecha Creacion: 2020
-  Fecha Modificación: 2020
-  Versión : 1.0
+  Fecha Modificacion: 2020
+  Version : 1.0
   Email: suMail
 */
 
-#include "Punto.h"
+#include "./Punto.h"
 
 Punto::Punto()
 {

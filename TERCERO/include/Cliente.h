@@ -1,5 +1,20 @@
+/*
+  Nombre: CDT.h
+  Autor: IPOO - Univalle Tulua
+  Fecha Creacion: 2020
+  Fecha Modificacion: 2020
+  Version : 1.0
+  Email: suMail
+*/
 #ifndef __CLASSCLIENTE
 #define __CLASSCLIENTE
+/*
+   Clase: Punto
+   Responsabilidad:
+    - 
+    - 
+   Colaboracion: ninguna
+*/
 #include "Mes.h"
 #include "CuentaCorriente.h"
 #include "CDT.h"

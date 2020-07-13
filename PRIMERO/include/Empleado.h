@@ -3,7 +3,7 @@ Nombre de archivo: Empleado.h
 Version: 0.1
 Fecha de creacion: 6/7/2020
 Fecha de ultima modificacion: 6/7/2020
-Autor: Miguel Ángel Askar Rodríguez - 202055842
+Autor: Miguel ï¿½ngel Askar Rodrï¿½guez - 202055842
 E-mail: miguel.askar@correounivalle.edu.co
 */
 
@@ -37,6 +37,10 @@ class Empleado
 		int calcularPrestaciones();		
 		int cantidadDeHijos();
 		double auxilioEducativo();
+		void cambiarEstadoCivil();
+		int calcularAuxilioConyugal();
+		int calcularAuxilioEducativo(int salario);
+		int calcularDiferenciaSalarial(Empleado otroEmpleado);
 		
 	private:
 		string nombre;
@@ -45,7 +49,8 @@ class Empleado
 		int salario;
 		Fecha fechaNacimiento;
 		Fecha fechaIngreso;
-		int numeroHijos;		
+		int numeroHijos;
+		string estadoCivil;		
 	
 };
 

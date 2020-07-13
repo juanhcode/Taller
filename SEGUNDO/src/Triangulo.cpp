@@ -2,12 +2,12 @@
   Nombre: Triangulo.cpp
   Autor: IPOO - Univalle Tulua
   Fecha Creacion: 2020
-  Fecha Modificación: 2020
-  Versión : 1.0
+  Fecha Modificacion: 2020
+  Version : 1.0
   Email: suMail
 */
 
-#include "Triangulo.h"
+#include "./Triangulo.h"
 
 Triangulo::Triangulo(Punto dPunto1,Punto dPunto2, Punto dPunto3)
 {
@@ -16,7 +16,7 @@ Triangulo::Triangulo(Punto dPunto1,Punto dPunto2, Punto dPunto3)
     punto3 = dPunto3;
 }
 
-//utilice la formula de la distancia entre dos puntos para el método darLado1.
+//utilice la formula de la distancia entre dos puntos para el metodo darLado1.
 //es necesario utilizar las funciones pow(x,2), sqrt(y) de la biblioteca cmath
 
 double Triangulo::calcularLado1()
@@ -49,7 +49,7 @@ double Triangulo::calcularPerimetro()
     return calcularLado1() + calcularLado2() + calcularLado3();
 }
 
-//Para calcular el area se puede utilizar la siguiente ecuación
+//Para calcular el area se puede utilizar la siguiente ecuacion
 //RaizCuadrada(s * (s - Lado1) * (s - Lado2) * (s - Lado3))
 //Donde s = perimetro / 2
 

@@ -2,8 +2,8 @@
   Nombre: Triangulo.h
   Autor: IPOO - Univalle Tulua
   Fecha Creacion: 2020
-  Fecha Modificación: 2020
-  Versión : 1.0
+  Fecha Modificacion: 2020
+  Version : 1.0
   Email: suMail
 */
 
@@ -12,11 +12,11 @@
 /*
    Clase: Triangulo
    Responsabilidad:  Deben completarlo
-   Colaboración: Deben completarlo
+   Colaboracion: Deben completarlo
 */
 
 #include "Punto.h"
-#include <cmath> //esta biblioteca sirve para utilizar los métodos matematicos por ej:
+#include <cmath> //esta biblioteca sirve para utilizar los mï¿½todos matematicos por ej:
                  //sqrt(y), pow(x,p)
 
 class Triangulo

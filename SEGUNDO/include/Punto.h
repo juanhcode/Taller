@@ -2,8 +2,8 @@
   Nombre: Punto.h
   Autor: IPOO - Univalle Tulua
   Fecha Creacion: 2020
-  Fecha Modificación: 2020
-  Versión : 1.0
+  Fecha Modificacion: 2020
+  Version : 1.0
   Email: suMail
 */
 
@@ -14,7 +14,7 @@
    Responsabilidad:
     - Simula ser un punto  del plano cartesiano,de coordenadas (x,y).
     - A traves de ella, podemos crear, cambiar y devolver puntos en el plano cartesiano.
-   Colaboración: ninguna
+   Colaboracion: ninguna
 */
 
 
