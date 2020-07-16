@@ -8,7 +8,10 @@ E-mail: miguel.askar@correounivalle.edu.co
 */
 
 #include "Empleado.h"
-#include "Fecha.h"
+#include "./Fecha.h"
+#include <iostream>
+using namespace std;
+
 
 Empleado::Empleado(string dNombre,
 					string dApellido,
@@ -89,8 +92,16 @@ double Empleado::auxilioEducativo()
 	return auxilio;
 }
 
-void Empleado::cambiarEstadoCivil(){
+int Empleado::cambiarEstadoCivil(){
 
+	if (estadoCivil = 1)
+	{
+		cout<<"Casado"<<endl;
+	}
+	else if(estadoCivil = 0){
+		cout<<"No casado"<<endl;
+	}
+	
 }
 
 int Empleado::calcularAuxilioConyugal(){

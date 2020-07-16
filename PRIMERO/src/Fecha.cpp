@@ -6,7 +6,7 @@ Autor: Miguel �ngel Askar Rodr�guez - 201918564
 Correos electr�nicos: miguel.askar@correounivalle.edu.co
 */
 
-#include "Fecha.h"
+#include "./Fecha.h"
 
 Fecha::Fecha(int nDia, int nMes, int nAnio)
 {

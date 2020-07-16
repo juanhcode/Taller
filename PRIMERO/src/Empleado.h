@@ -37,7 +37,7 @@ class Empleado
 		int calcularPrestaciones();		
 		int cantidadDeHijos();
 		double auxilioEducativo();
-		void cambiarEstadoCivil();
+		int cambiarEstadoCivil();
 		int calcularAuxilioConyugal();
 		int calcularAuxilioEducativo(int salario);
 		int calcularDiferenciaSalarial(Empleado otroEmpleado);
@@ -50,7 +50,7 @@ class Empleado
 		Fecha fechaNacimiento;
 		Fecha fechaIngreso;
 		int numeroHijos;
-		string estadoCivil;		
+		int estadoCivil;		
 	
 };
 
