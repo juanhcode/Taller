@@ -20,7 +20,6 @@ class Menu
 		void mostrarDatosPersonales();
 		void mostrarCalculos();
 		
-	
 	protected:
 		//Lo utilizaremos cuando trabajemos con herencia.
 		
@@ -30,9 +29,7 @@ class Menu
 		Fecha fechaNacimiento;
 		Fecha fechaIngreso;
 		int edad, antiguedad, prestaciones;
-		///////////////
 		string estado;
-		//////////////
 };
 
 #endif //__CLASSMENU

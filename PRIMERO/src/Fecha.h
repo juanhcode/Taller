@@ -1,19 +1,19 @@
 /*Nombre de archivo: Fecha.h
 Version: 0.1
-Fecha de creaci�n: 27/06/2020
-Fecha de �ltima de moficaci�n: 06/07/2020
-Autor: Miguel �ngel Askar Rodr�guez - 201918564
-Correos electr�nicos: miguel.askar@correounivalle.edu.co
+Fecha de creacion: 27/06/2020
+Fecha de ultima de moficacion: 06/07/2020
+Autor: Juan Manuel Hoyos Contreras - 201958950-2711
+Correos electronicos: 
 */
 
 /*CRC:
 Clase: Fecha
 Responsabilidad:
--Mostrar el d�a de la fecha.
+-Mostrar el dia de la fecha.
 -Mostrar el mes de la fecha.
--Mostrar el a�o de la fecha.
+-Mostrar el año de la fecha.
 -Calcular una diferencia entre meses de la fecha.
-Colaboraci�n: Ninguna.
+Colaboracion: Ninguna.
 */
 
 #ifndef __CLASSFECHA

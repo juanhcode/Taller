@@ -3,7 +3,7 @@ Nombre de archivo: Empleado.cpp
 Version: 0.1
 Fecha de creacion: 6/7/2020
 Fecha de ultima modificacion: 6/7/2020
-Autor: Miguel �ngel Askar Rodr�guez - 202055842
+Autor: Juan Manuel Hoyos Contreras - 201958950-2711
 E-mail: miguel.askar@correounivalle.edu.co
 */
 
@@ -31,9 +31,7 @@ Empleado::Empleado(string dNombre,
 	fechaNacimiento= dFechaNacimiento;
 	fechaIngreso= dFechaIngreso;
 	numeroHijos= dNumeroHijos;
-	//////
 	estado = dEstado;	
-	///////
 }
 
 Empleado::~Empleado()
@@ -97,9 +95,7 @@ double Empleado::auxilioEducativo()
 	
 }
 
-
 string Empleado::darEstado(){
-	
 	return estado;
 }
 
