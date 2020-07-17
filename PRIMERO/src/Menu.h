@@ -1,13 +1,14 @@
 #include <iostream>
 #include "Empleado.h"
 #include "Fecha.h"
+#include <string>
 
 #include <stdlib.h>
 
 using namespace std;
 
 #ifndef __CLASSMENU
-#define __CLASSMENU
+#define __CLASSMENU 
 
 class Menu
 {
@@ -30,7 +31,7 @@ class Menu
 		Fecha fechaIngreso;
 		int edad, antiguedad, prestaciones;
 		///////////////
-		string estadoCivil;
+		string estado;
 		//////////////
 };
 

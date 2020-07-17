@@ -24,7 +24,7 @@ using namespace std;
 class Empleado
 {
 	public:
-		Empleado(string nombre, string apellido, int sexo, int salario, Fecha fechaNacimiento, Fecha fechaIngreso, int numeroHijos,int estadoCivil);
+		Empleado(string nombre, string apellido, int sexo, int salario, Fecha fechaNacimiento, Fecha fechaIngreso, int numeroHijos,string estado);
 		Empleado(){};
 		~Empleado();
 		string darNombre();
@@ -39,7 +39,7 @@ class Empleado
 		int cantidadDeHijos();
 		double auxilioEducativo();
 		//////
-		int darEstado(); 
+		string darEstado(); 
 		//////
 		int calcularAuxilioConyugal();
 		int calcularAuxilioEducativo(int salario);
@@ -53,7 +53,7 @@ class Empleado
 		Fecha fechaNacimiento;
 		Fecha fechaIngreso;
 		int numeroHijos;
-		int estado;		
+		string estado;		
 };
 
 #endif

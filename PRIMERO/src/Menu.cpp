@@ -7,7 +7,7 @@ Menu::Menu()
 	Fecha f2(1,1,2015); //Fecha ingreso
 	fechaNacimiento= f1;
 	fechaIngreso= f2;
-	Empleado e("Pepito", "Arbelaez", 1, 2000000, fechaNacimiento, fechaIngreso, 4,1);
+	Empleado e("Pepito", "Arbelaez", 1, 2000000, fechaNacimiento, fechaIngreso, 4,"Casado");
 	e1= e;
 	edad= 0, prestaciones= 0, antiguedad= 0;
 }
