@@ -20,7 +20,6 @@ using namespace std;
 
 #ifndef __CLASSEMPLEADO
 #define __CLASSEMPLEADO 
-//hola soy emanuel
 
 class Empleado
 {
