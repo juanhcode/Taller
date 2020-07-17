@@ -8,8 +8,9 @@ E-mail: miguel.askar@correounivalle.edu.co
 */
 
 #include "Empleado.h"
-#include "./Fecha.h"
+#include "Fecha.h"
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 
@@ -19,7 +20,8 @@ Empleado::Empleado(string dNombre,
 					int dSalario,
 					Fecha dFechaNacimiento,
 					Fecha dFechaIngreso,
-					int dNumeroHijos)
+					int dNumeroHijos,
+					int destadoCivil)
 {
 	nombre= dNombre;
 	apellido= dApellido;
@@ -27,7 +29,10 @@ Empleado::Empleado(string dNombre,
 	salario= dSalario;
 	fechaNacimiento= dFechaNacimiento;
 	fechaIngreso= dFechaIngreso;
-	numeroHijos= dNumeroHijos;	
+	numeroHijos= dNumeroHijos;
+	//////
+	estadoCivil = destadoCivil;	
+	///////
 }
 
 Empleado::~Empleado()
@@ -92,19 +97,15 @@ double Empleado::auxilioEducativo()
 	return auxilio;
 }
 
-int Empleado::cambiarEstadoCivil(){
-
-	if (estadoCivil = 1)
-	{
-		cout<<"Casado"<<endl;
-	}
-	else if(estadoCivil = 0){
-		cout<<"No casado"<<endl;
-	}
-	
+////////////////////////////////////////
+int Empleado::darEstado(){
+	return estado;
 }
 
+///////////////////////////////////////////////
+
 int Empleado::calcularAuxilioConyugal(){
+	double auxilioConyugal(darSalario() sqrt 75%); 
 
 }
 
@@ -115,4 +116,5 @@ int Empleado::calcularAuxilioEducativo(int Nuevosalario){
 int Empleado::calcularDiferenciaSalarial(Empleado otroEmpleado){
 
 }
+
 

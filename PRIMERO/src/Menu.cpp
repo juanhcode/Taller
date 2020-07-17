@@ -7,10 +7,9 @@ Menu::Menu()
 	Fecha f2(1,1,2015); //Fecha ingreso
 	fechaNacimiento= f1;
 	fechaIngreso= f2;
-	Empleado e("Pepito", "Arbelaez", 1, 2000000, fechaNacimiento, fechaIngreso, 4);
+	Empleado e("Pepito", "Arbelaez", 1, 2000000, fechaNacimiento, fechaIngreso, 4,1);
 	e1= e;
 	edad= 0, prestaciones= 0, antiguedad= 0;
-	estadoCivil = 0;
 }
 
 Menu::~Menu()
@@ -75,7 +74,7 @@ void Menu::mostrarDatosPersonales()
 	cout<< "Nombre: " << e1.darNombre() << endl;
 	cout<< "Apellido: " << e1.darApellido() << endl;
 	cout<< "Sexo: " << e1.darSexo() << endl;
-	cout<< "Estado Civil:  " << e1.cambiarEstadoCivil() << endl;
+	cout<< "Estado:  " << e1.darEstado() << endl;
 	cout<< "Fecha nacimiento: " << fechaNacimiento.darDia() << "/" << fechaNacimiento.darMes() << "/" << fechaNacimiento.darAnio() << endl;
 	cout<< "Fecha ingreso: " << fechaIngreso.darDia() << "/" << fechaIngreso.darMes() << "/" << fechaIngreso.darAnio() << endl;
 	cout<< "Salario: " << e1.darSalario() << endl;

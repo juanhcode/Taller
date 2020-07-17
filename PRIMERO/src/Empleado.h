@@ -8,7 +8,7 @@ E-mail: miguel.askar@correounivalle.edu.co
 */
 
 /*CRC
-Clase: Empleado
+Clase: Empleado 
 Responsabilidad: Cambiar y mostrar salario, Calcular edad, Prestaciones, y antiguedad del empleado.
 Colaboracion: Fecha.h
 */
@@ -16,15 +16,15 @@ Colaboracion: Fecha.h
 #include "Fecha.h"
 #include <string>
 
-using namespace std;
+using namespace std; 
 
 #ifndef __CLASSEMPLEADO
-#define __CLASSEMPLEADO
+#define __CLASSEMPLEADO 
 
 class Empleado
 {
 	public:
-		Empleado(string nombre, string apellido, int sexo, int salario, Fecha fechaNacimiento, Fecha fechaIngreso, int numeroHijos);
+		Empleado(string nombre, string apellido, int sexo, int salario, Fecha fechaNacimiento, Fecha fechaIngreso, int numeroHijos,int estadoCivil);
 		Empleado(){};
 		~Empleado();
 		string darNombre();
@@ -32,12 +32,15 @@ class Empleado
 		int darSexo();
 		int darSalario();
 		void cambiarSalario(int);		
-		int calcularEdad();
+		int calcularEdad();  
+
 		int calcularAntiguedad();
 		int calcularPrestaciones();		
 		int cantidadDeHijos();
 		double auxilioEducativo();
-		int cambiarEstadoCivil();
+		//////
+		int darEstado(); 
+		//////
 		int calcularAuxilioConyugal();
 		int calcularAuxilioEducativo(int salario);
 		int calcularDiferenciaSalarial(Empleado otroEmpleado);
@@ -50,8 +53,7 @@ class Empleado
 		Fecha fechaNacimiento;
 		Fecha fechaIngreso;
 		int numeroHijos;
-		int estadoCivil;		
-	
+		int estado;		
 };
 
 #endif
