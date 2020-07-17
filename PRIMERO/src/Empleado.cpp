@@ -21,7 +21,7 @@ Empleado::Empleado(string dNombre,
 					Fecha dFechaNacimiento,
 					Fecha dFechaIngreso,
 					int dNumeroHijos,
-					int destadoCivil)
+					string destado)
 {
 	nombre= dNombre;
 	apellido= dApellido;
@@ -31,7 +31,7 @@ Empleado::Empleado(string dNombre,
 	fechaIngreso= dFechaIngreso;
 	numeroHijos= dNumeroHijos;
 	//////
-	estadoCivil = destadoCivil;	
+	estado = destado;	
 	///////
 }
 
@@ -98,23 +98,26 @@ double Empleado::auxilioEducativo()
 }
 
 ////////////////////////////////////////
-int Empleado::darEstado(){
+string Empleado::darEstado(){
 	return estado;
 }
 
 ///////////////////////////////////////////////
 
 int Empleado::calcularAuxilioConyugal(){
-	double auxilioConyugal(darSalario() sqrt 75%); 
+	
 
 }
 
-int Empleado::calcularAuxilioEducativo(int Nuevosalario){
-	salario = Nuevosalario;
+int Empleado::calcularAuxilioEducativo(int porcentaje1,int cambiarSalario)
+{
+	porcentaje = porcentaje1;
+	porcentaje = porcentaje*salario/100;
+	int daruxilioeducativo = porcentaje;
 }
 
 int Empleado::calcularDiferenciaSalarial(Empleado otroEmpleado){
 
-}
+ }
 
 

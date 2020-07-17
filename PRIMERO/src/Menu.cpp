@@ -7,7 +7,7 @@ Menu::Menu()
 	Fecha f2(1,1,2015); //Fecha ingreso
 	fechaNacimiento= f1;
 	fechaIngreso= f2;
-	Empleado e("Pepito", "Arbelaez", 1, 2000000, fechaNacimiento, fechaIngreso, 4,1);
+	Empleado e("Pepito", "Arbelaez", 1, 2000000, fechaNacimiento, fechaIngreso, 4,"casado");
 	e1= e;
 	edad= 0, prestaciones= 0, antiguedad= 0;
 }
@@ -23,13 +23,14 @@ void Menu::seleccionarOpcion()
 	cout<<"1 - Modificar salario" << endl;
 	cout<<"2 - Calcular edad" << endl;
 	cout<<"3 - Calcular antiguedad" << endl;
-	cout<<"4 - Calcular prestaciones" << endl;
-	cout<<"5 - Salir" << endl;
+	cout<<"4 - Calcular prestaciones" << endl; 
+	cout<<"5 - Calcular auxilioeducativo" << endl; 
+	cout<<"6 - Salir" << endl;
 	do
 	{
 		cout<<"Introduza Opcion: ";
 		cin >> opcion;		
-	}while(!((opcion>=1) && (opcion<=5)));		
+	}while(!((opcion>=1) && (opcion<=6)));		
 }
 
 void Menu::visualizar()
@@ -61,11 +62,16 @@ void Menu::visualizar()
 				case 4:
 					prestaciones= e1.calcularPrestaciones();			
 					break;
+				case 5:
+					cout<< "Introduzca el porcentaje del salario" << endl;
+					cin >> porcentaje;
+				    e1.auxilioEducativo();
+				    	
 			}
 			system("cls");
 		}
 		
-	}while(opcion!= 5);
+	}while(opcion!= 6);
 	
 }
 

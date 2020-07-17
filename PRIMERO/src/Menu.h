@@ -29,9 +29,9 @@ class Menu
 		Fecha fechaNacimiento;
 		Fecha fechaIngreso;
 		int edad, antiguedad, prestaciones;
-		///////////////
-		string estadoCivil;
-		//////////////
+		string estado;
+		int porcentaje;
+
 };
 
 #endif //__CLASSMENU
