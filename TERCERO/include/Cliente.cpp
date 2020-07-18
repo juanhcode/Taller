@@ -1,7 +1,20 @@
 #include "Cliente.h"
 
-Cliente::Cliente(string,string,CuentaCorriente,CuentaAhorros,CDT,Mes)
+Cliente::Cliente(string dNombre,
+                string dCedula,
+                CuentaCorriente dCuentaCorriente,
+                CuentaAhorros dCuentaAhorros,
+                CDT dCDT,
+                Mes dMes)
 {
+    //nombre = dNombre;
+    //cedula = dCedula;
+    //CuentaCorriente= dCuentaCorriente;
+    //CuentaAhorros= dCuentaAhorros;
+    //CDT = dCDT;
+    //Mes = dMes;
+
+
 }
 
 Cliente::~Cliente()
@@ -10,11 +23,11 @@ Cliente::~Cliente()
 
 
 string Cliente::darNombre(){
-
+    return nombre;
 }
 
 string Cliente::darCedula(){
-
+    return cedula;
 }
 
 void Cliente::invertirCDT(int,double){

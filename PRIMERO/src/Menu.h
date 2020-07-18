@@ -2,7 +2,6 @@
 #include "Empleado.h"
 #include "Fecha.h"
 #include <string>
-
 #include <stdlib.h>
 
 using namespace std;

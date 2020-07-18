@@ -8,7 +8,7 @@ Menu::Menu()
 	//Fecha f2(1,1,2015); //Fecha ingreso
 	//fechaNacimiento= f1;
 	//fechaIngreso= f2;
-	//Empleado e("Pepito", "Arbelaez", 1, 2000000, fechaNacimiento, fechaIngreso, 4,"Casado");
+	//Cliente e();
 	//Empleado otroEmpleado("Luis","Pelaez",1,4000000,fechaNacimiento,fechaIngreso,5,"No casdo");
 	//e1= e;
 	//e2=otroEmpleado;
@@ -65,7 +65,7 @@ void Menu::visualizar()
  
 void Menu::mostrarDatosPersonales()
 {
-	cout<< "Nombre: " << endl;
+	cout<< "Nombre: " <<endl;
 	cout<< "Cedula: " << endl;
 	cout<< endl;
 }

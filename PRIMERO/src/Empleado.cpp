@@ -126,6 +126,3 @@ int Empleado::darAuxilioEdu(){
 int Empleado::calcularDiferenciaSalarial(Empleado otroEmpleado){
 	//HACER	
 }
-
-
-
