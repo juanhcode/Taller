@@ -27,12 +27,4 @@ public:
     ~Mes();
 };
 
-Mes::Mes(int)
-{
-}
-
-Mes::~Mes()
-{
-}
-
 #endif // __CLASMES

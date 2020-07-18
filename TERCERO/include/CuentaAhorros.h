@@ -25,11 +25,4 @@ public:
     ~CuentaAhorros();
 };
 
-CuentaAhorros::CuentaAhorros(int,double)
-{
-}
-
-CuentaAhorros::~CuentaAhorros()
-{
-}
 #endif // __CLASCUENTAAHORROS

@@ -1,4 +1,13 @@
-#include "./Cliente.h"
+#include "Cliente.h"
+
+Cliente::Cliente(string,string,CuentaCorriente,CuentaAhorros,CDT,Mes)
+{
+}
+
+Cliente::~Cliente()
+{
+}
+
 
 string Cliente::darNombre(){
 

@@ -23,12 +23,12 @@ class Menu
 
 private:
   int opcion;
-  int edad, antiguedad, prestaciones, auxilioConyugal, auxilioEducativo;
-  string estado;
+  //int edad, antiguedad, prestaciones, auxilioConyugal, auxilioEducativo;
+  //string estado;
 
 public:
   Menu();
-  virtual ~Menu();
+  ~Menu();
   void seleccionarOpcion();
   void visualizar();
   void mostrarDatosPersonales();

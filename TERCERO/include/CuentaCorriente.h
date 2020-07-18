@@ -24,12 +24,4 @@ public:
     ~CuentaCorriente();
 };
 
-CuentaCorriente::CuentaCorriente(int)
-{
-}
-
-CuentaCorriente::~CuentaCorriente()
-{
-}
-
 #endif // __CLASCUENTACORRIENTE

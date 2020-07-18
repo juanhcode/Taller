@@ -41,12 +41,4 @@ public:
     ~Cliente();
 };
 
-Cliente::Cliente(string,string,CuentaCorriente,CuentaAhorros,CDT,Mes)
-{
-}
-
-Cliente::~Cliente()
-{
-}
-
 #endif // __CLASCLIENTE
