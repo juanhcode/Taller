@@ -6,8 +6,6 @@
   Version : 1.0
   Email: suMail
 */
-#ifndef __CLASSCUENTACORRIENTE
-#define __CLASSCUENTACORRIENTE
 /*
    Clase: CuentaCorriente
    Responsabilidad:
@@ -15,6 +13,8 @@
     - 
    Colaboracion: ninguna
 */
+#ifndef __CLASSCUENTACORRIENTE
+#define __CLASSCUENTACORRIENTE
 class CuentaCorriente
 {
 private:

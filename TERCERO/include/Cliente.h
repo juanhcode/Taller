@@ -6,8 +6,6 @@
   Version : 1.0
   Email: suMail
 */
-#ifndef __CLASSCLIENTE
-#define __CLASSCLIENTE
 /*
    Clase: Punto
    Responsabilidad:
@@ -15,6 +13,8 @@
     - 
    Colaboracion: ninguna
 */
+#ifndef __CLASSCLIENTE
+#define __CLASSCLIENTE
 #include "Mes.h"
 #include "CuentaCorriente.h"
 #include "CDT.h"

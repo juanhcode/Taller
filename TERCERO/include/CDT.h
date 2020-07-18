@@ -6,15 +6,15 @@
   Version : 1.0
   Email: suMail
 */
-#ifndef __CLASSCDT
-#define __CLASSCDT
 /*
-   Clase: Punto
+   Clase: CDT
    Responsabilidad:
-    - 
+    -
     - 
    Colaboracion: ninguna
 */
+#ifndef __CLASSCDT
+#define __CLASSCDT
 class CDT
 {
 private:
@@ -24,13 +24,5 @@ public:
     CDT();
     ~CDT();
 };
-
-CDT::CDT(/* args */)
-{
-}
-
-CDT::~CDT()
-{
-}
 
 #endif // __CLASCDT
