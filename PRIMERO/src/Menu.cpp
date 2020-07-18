@@ -1,4 +1,5 @@
 #include "Menu.h"
+#include <cstdlib>
 
 Menu::Menu()
 {
@@ -8,8 +9,10 @@ Menu::Menu()
 	fechaNacimiento= f1;
 	fechaIngreso= f2;
 	Empleado e("Pepito", "Arbelaez", 1, 2000000, fechaNacimiento, fechaIngreso, 4,"Casado");
+	Empleado otroEmpleado("Luis","Pelaez",1,4000000,fechaNacimiento,fechaIngreso,5,"No casdo");
 	e1= e;
-	edad= 0, prestaciones= 0, antiguedad= 0, auxilioEducativo= 0;
+	e2=otroEmpleado;
+	edad= 0, prestaciones= 0, antiguedad= 0;
 }
 
 Menu::~Menu()
@@ -36,7 +39,7 @@ void Menu::seleccionarOpcion()
 void Menu::visualizar()
 {
 	int nuevoSalario = 0;
-	int porcentaje = 0;
+	
 	do
 	{
 		mostrarDatosPersonales();
@@ -50,7 +53,7 @@ void Menu::visualizar()
 					cin >> nuevoSalario;
 					e1.cambiarSalario(nuevoSalario);
 					prestaciones= e1.calcularPrestaciones();
-
+					//auxilioEducativo=e1.calcularAuxilioEducativo(nuevoSalario);
 					break;
 				
 				case 2:
@@ -66,10 +69,13 @@ void Menu::visualizar()
 					break;
 					
 				case 5:
-					cout<<"Introduzca Un porcentaje"<<endl;
+				    int porcentaje;
+					int salario= 0;
+					cout<<"Introduzca el porcentaje para el auxilio educativo"<<endl;
 					cin>>porcentaje;
-					porcentaje = e1.calcularAuxilioEducativo();
-					break; 
+					auxilioEducativo=e1.calcularAuxilioEducativo(salario);
+
+				   break; 
 
 					
 			}
@@ -86,7 +92,8 @@ void Menu::mostrarDatosPersonales()
 	cout<< "Apellido: " << e1.darApellido() << endl;
 	cout<< "Sexo: " << e1.darSexo() << endl;
 	cout<< "Estado:  " << e1.darEstado() << endl;
-	cout<< "Auxilio conyugal: "<< e1.darAuxilioC()  <<endl;
+	cout<< "Auxilio conyugal: "<< e1.darAuxilioC() <<endl;
+	cout<< "Auxilio Educativo: "<<e1.darAuxilioEdu() <<endl;
 	cout<< "Fecha nacimiento: " << fechaNacimiento.darDia() << "/" << fechaNacimiento.darMes() << "/" << fechaNacimiento.darAnio() << endl;
 	cout<< "Fecha ingreso: " << fechaIngreso.darDia() << "/" << fechaIngreso.darMes() << "/" << fechaIngreso.darAnio() << endl;
 	cout<< "Salario: " << e1.darSalario() << endl;
@@ -107,11 +114,6 @@ void Menu::mostrarCalculos()
 	{
 		cout << "Prestaciones= " << prestaciones << endl;
 	}
-	if (auxilioEducativo > 0)
-	{
-		cout <<"Auxilio Educativo= "<< auxilioEducativo <<endl;
-	}
-	
 }
 
 

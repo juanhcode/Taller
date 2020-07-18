@@ -27,9 +27,10 @@ class Menu
 	private:
 		int opcion;
 		Empleado e1;
+		Empleado e2;
 		Fecha fechaNacimiento;
 		Fecha fechaIngreso;
-		int edad, antiguedad, prestaciones,auxilioConyugal;
+		int edad, antiguedad, prestaciones,auxilioConyugal,auxilioEducativo;
 		string estado;
 };
 

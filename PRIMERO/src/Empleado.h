@@ -41,6 +41,7 @@ class Empleado
 		int calcularAuxilioConyugal();
 		int darAuxilioC();
 		int calcularAuxilioEducativo(int salario);
+		int darAuxilioEdu();
 		int calcularDiferenciaSalarial(Empleado otroEmpleado);
 
 	private:
@@ -51,7 +52,8 @@ class Empleado
 		Fecha fechaNacimiento;
 		Fecha fechaIngreso;
 		int numeroHijos;
-		string estado;	
+		string estado;
+	
 };
 
 #endif

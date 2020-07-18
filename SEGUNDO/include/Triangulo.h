@@ -16,7 +16,7 @@
 */
 
 #include "Punto.h"
-#include <cmath> //esta biblioteca sirve para utilizar los m�todos matematicos por ej:
+#include <cmath> //esta biblioteca sirve para utilizar los metodos matematicos por ej:
                  //sqrt(y), pow(x,p)
 
 class Triangulo
