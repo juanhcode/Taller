@@ -21,6 +21,7 @@ using namespace std;
 #ifndef __CLASSEMPLEADO
 #define __CLASSEMPLEADO 
 
+
 class Empleado
 {
 	public:
@@ -36,12 +37,12 @@ class Empleado
 		int calcularAntiguedad();
 		int calcularPrestaciones();		
 		int cantidadDeHijos();
-		double auxilioEducativo();
 		string darEstado(); 
 		int calcularAuxilioConyugal();
+		int darAuxilioC();
 		int calcularAuxilioEducativo(int salario);
 		int calcularDiferenciaSalarial(Empleado otroEmpleado);
-		
+
 	private:
 		string nombre;
 		string apellido;
@@ -50,7 +51,7 @@ class Empleado
 		Fecha fechaNacimiento;
 		Fecha fechaIngreso;
 		int numeroHijos;
-		string estado;		
+		string estado;	
 };
 
 #endif
