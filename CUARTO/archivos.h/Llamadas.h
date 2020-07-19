@@ -1,6 +1,9 @@
+
 #include "Informacion.h"
-#include "Consolidado.h"
+//#include "Consolidado.h"
 #include "PlanTelefonico.h"
+#ifndef __CLASSLLAMADAS
+#define __CLASSLLAMADAS
 class llamadas
 {
 private:
@@ -11,7 +14,6 @@ public:
     ~llamadas();
 };
 
+#endif //CLASLLAMADAS
 
-
-    
-
+//INSERVIBLES

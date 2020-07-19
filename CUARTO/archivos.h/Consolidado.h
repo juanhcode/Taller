@@ -1,4 +1,8 @@
 #include "Llamadas.h"
+#ifndef __CLASSConsolidado
+#define __CLASSConsolidado
+
+
 class Consolidado
 {
 private:
@@ -8,3 +12,6 @@ public:
     Consolidado(/* args */);
     ~Consolidado();
 };
+
+
+#endif
