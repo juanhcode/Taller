@@ -49,6 +49,8 @@ class Empleado
 		int darAuxilioEdu();
 		/////
 		int calcularDiferenciaSalarial(Empleado otroEmpleado);
+		///
+		int calcularAuxilioConyugal(double porcentaje);
 
 	private:
 		string nombre;

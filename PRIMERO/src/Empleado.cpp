@@ -99,7 +99,7 @@ string Empleado::darEstado(){
 int Empleado::calcularAuxilioConyugal(){
 	
 	int auxilio;
-	auxilio= salario* (sqrt(0.75));
+	auxilio= (sqrt(0.75 * salario));
     return auxilio;
 
 }
@@ -117,4 +117,13 @@ double Empleado::calcularAuxilioEducativo()
 
 int Empleado::darAuxilioEdu(){
 	return calcularAuxilioEducativo();
+}
+
+
+int Empleado::calcularAuxilioConyugal(double porcentaje){
+	
+	int auxilio;
+	auxilio= (sqrt(porcentaje * salario));
+    return auxilio;
+
 }
