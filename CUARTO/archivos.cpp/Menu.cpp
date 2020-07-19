@@ -14,17 +14,15 @@ Menu::~Menu()
 void Menu::seleccionarOpcion()
 {
 	cout << endl;
-	cout << "1 - Modificar salario" << endl;
-	cout << "2 - Calcular edad" << endl;
-	cout << "3 - Calcular antiguedad" << endl;
-	cout << "4 - Calcular prestaciones" << endl;
-	cout << "5 - Calcular auxilio conyugal" << endl;
-	cout << "6 - Salir" << endl;
+	cout << "1 - Registro de llamada" << endl;
+	cout << "2 - Mostrar la información" << endl;
+	cout << "3 - Mostrar un consolidado" << endl;
+	cout << "4 - Salir" << endl;
 	do
 	{
 		cout << "Introduza Opcion: ";
 		cin >> opcion;
-	} while (!((opcion >= 1) && (opcion <= 6)));
+	} while (!((opcion >= 1) && (opcion <= 4)));
 }
 
 void Menu::visualizar()
@@ -56,22 +54,9 @@ void Menu::visualizar()
 			
 				break;
 
-			case 5:
-				break;
-
 			}
 			system("cls");
 		}
 
-	} while (opcion != 6);
-}
-
-void Menu::mostrarDatosPersonales()
-{
-	
-}
-
-void Menu::mostrarCalculos()
-{
-	
+	} while (opcion != 4);
 }
