@@ -22,6 +22,7 @@ private:
 public:
     CuentaCorriente(int);
     void depositarSaldo(int nuevoSaldo);
+    int retirarsaldo(int saldo);
     ~CuentaCorriente();
 };
 

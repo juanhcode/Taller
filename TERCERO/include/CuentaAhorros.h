@@ -18,10 +18,11 @@
 class CuentaAhorros
 {
 private:
-    int Saldo;
+    int saldo;
     double interesMensual;
 public:
     CuentaAhorros(int,double);
+    void pagarInteres(int saldo,double interesMensual);
     ~CuentaAhorros();
 };
 

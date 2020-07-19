@@ -1,20 +1,15 @@
 #include "Cliente.h"
 
 Cliente::Cliente(string dNombre,
-                string dCedula,
-                CuentaCorriente dCuentaCorriente,
-                CuentaAhorros dCuentaAhorros,
-                CDT dCDT,
-                Mes dMes)
+                string dCedula)
+                //CuentaCorriente dCuentaCorriente,
+                //CuentaAhorros dCuentaAhorros,
+                //CDT dCDT,
+                //Mes dMes)
 {
-    //nombre = dNombre;
-    //cedula = dCedula;
-    //CuentaCorriente= dCuentaCorriente;
-    //CuentaAhorros= dCuentaAhorros;
-    //CDT = dCDT;
-    //Mes = dMes;
-
-
+    nombre = dNombre;
+    cedula = dCedula;
+ 
 }
 
 Cliente::~Cliente()

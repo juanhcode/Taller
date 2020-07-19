@@ -108,8 +108,6 @@ int Empleado::darAuxilioC(){
 	return calcularAuxilioConyugal();
 }
 
-///g++ -o .\ejecutable.exe .\main.cpp  .\Menu.cpp .\Empleado.cpp .\Fecha.cpp
-///.\ejecutable.exe
 
 double Empleado::calcularAuxilioEducativo()
 {
@@ -120,8 +118,3 @@ double Empleado::calcularAuxilioEducativo()
 int Empleado::darAuxilioEdu(){
 	return calcularAuxilioEducativo();
 }
-
-//int Empleado::calcularDiferenciaSalarial(Empleado otroEmpleado){
-
-///	int diferencia= (calcularDiferenciaSalarial(int e2)
-//}

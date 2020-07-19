@@ -15,6 +15,7 @@
 */
 #ifndef __CLASSCDT
 #define __CLASSCDT
+#include "Cliente.h"
 class CDT
 {
 private:

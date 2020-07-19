@@ -8,6 +8,7 @@
 */
 #ifndef __MES
 #define __MES
+#include "Cliente.h"
 /*
    Clase: Punto
    Responsabilidad:

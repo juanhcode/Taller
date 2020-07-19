@@ -24,8 +24,8 @@ class Menu
 private:
   int opcion;
   int opcion2;
-  //int edad, antiguedad, prestaciones, auxilioConyugal, auxilioEducativo;
-  //string estado;
+  Cliente e1;
+  int saldo;
 
 public:
   Menu();

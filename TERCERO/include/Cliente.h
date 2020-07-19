@@ -27,12 +27,13 @@ private:
     string nombre;
     string cedula;
 public:
-    Cliente(string,string,CuentaCorriente,CuentaAhorros,CDT,Mes);
+    Cliente(string nombre,string cedula);//CuentaCorriente CuentaCo,CuentaAhorros CuentaAho,CDT cdt,Mes Mes1);
     string darNombre();
     string darCedula();
     void invertirCDT(int,double);
     void consignarCuentaAhorro(int);
     void cerrarCDT();
+    void consignarCuentaCorriente(int);
     void retirarCuentaCorriente(int);
     void retirarCuentaAhorro(int);
     double saldoTotal();

@@ -3,6 +3,11 @@
 
 Menu::Menu()
 {
+	///Cliente e();
+	CuentaCorriente CT(50000);
+	CuentaAhorros CTA(50000,0.6);
+	CDT cdt();
+
 
 }
 
@@ -29,7 +34,7 @@ void Menu::seleccionarOpcion()
 
 void Menu::visualizar()
 {
-	
+	int nuevoDinero= 0;
 	do
 	{
 		mostrarDatosPersonales();
@@ -39,7 +44,9 @@ void Menu::visualizar()
 			switch(opcion)
 			{
 				case 1:
-				
+					cout<<"Depositar saldo"<<endl;
+					cin>>saldo;
+					CuentaCorriente();
 					break;
 				
 				case 2:
@@ -67,4 +74,9 @@ void Menu::mostrarDatosPersonales()
 
 void Menu::mostrarCalculos()
 {
+	if (saldo > 0)
+	{
+		cout << "saldo = " <<saldo << endl;
+	}
+
 }
