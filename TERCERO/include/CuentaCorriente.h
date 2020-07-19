@@ -21,6 +21,7 @@ private:
     int saldo;
 public:
     CuentaCorriente(int);
+    void depositarSaldo(int nuevoSaldo);
     ~CuentaCorriente();
 };
 

@@ -37,11 +37,17 @@ class Empleado
 		int calcularAntiguedad();
 		int calcularPrestaciones();		
 		int cantidadDeHijos();
-		string darEstado(); 
+		///Funcion ejercicio 2
+		string darEstado();
+		/// 
+		//Estas son las funciones del ejercicio 3 
 		int calcularAuxilioConyugal();
 		int darAuxilioC();
-		int calcularAuxilioEducativo(int salario);
+		/////
+		//Estas son las funciones del ejercicio 4
+		double calcularAuxilioEducativo();
 		int darAuxilioEdu();
+		/////
 		int calcularDiferenciaSalarial(Empleado otroEmpleado);
 
 	private:

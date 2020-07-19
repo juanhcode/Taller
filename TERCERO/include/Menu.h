@@ -23,6 +23,7 @@ class Menu
 
 private:
   int opcion;
+  int opcion2;
   //int edad, antiguedad, prestaciones, auxilioConyugal, auxilioEducativo;
   //string estado;
 

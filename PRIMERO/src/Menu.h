@@ -29,8 +29,9 @@ class Menu
 		Empleado e2;
 		Fecha fechaNacimiento;
 		Fecha fechaIngreso;
-		int edad, antiguedad, prestaciones,auxilioConyugal,auxilioEducativo;
+		int edad, antiguedad, prestaciones,auxilioConyugal;
 		string estado;
+		int diferenciSalarial;
 };
 
 #endif //__CLASSMENU
