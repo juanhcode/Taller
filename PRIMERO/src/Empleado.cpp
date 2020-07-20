@@ -15,7 +15,6 @@ E-mail: miguel.askar@correounivalle.edu.co
 using namespace std;
 
 int auxilioc;
-int resta;
 
 Empleado::Empleado(string dNombre,
 					string dApellido,
@@ -25,7 +24,7 @@ Empleado::Empleado(string dNombre,
 					Fecha dFechaIngreso,
 					int dNumeroHijos,
 					string dEstado
-					)
+					)					
 {
 	nombre= dNombre;
 	apellido= dApellido;
@@ -136,12 +135,17 @@ int Empleado::darNuevoAuxilio(){
 //
 ///Ejercicio 5
 int Empleado::calcularDiferenciaSalarial(Empleado otroEmpleado){
-	int resta;
-	resta = darSalario() - otroEmpleado.salario;
-	return resta;
+
+    int diferencia;
+	diferencia = (otroEmpleado.salario - darSalario());
+	return diferencia;
 }
 
-////
+int Empleado::darDiferencia(){
+	return calcularDiferenciaSalarial(Empleado());
+}
+////resta=empleado2 
+////resta-empleado1
 
 
 //g++ -o .\archivo.exe .\main.cpp .\Menu.cpp .\Empleado.cpp .\Fecha.cpp

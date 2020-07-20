@@ -1,6 +1,16 @@
 
+/*
+Nombre de archivo: Informacion
+Version: 0.1
+Fecha de creacion: 18/7/2020
+Fecha de ultima modificacion: 18/7/2020
+Autor: emanuel benjumea - 201958950-2711
+E-mail:
+*/
+
+
+
 #include "Llamadas.h"
-#include "consolidado.h"
 #ifndef __CLASSINFORMACION
 #define __CLASSINFORMACION
 

@@ -12,7 +12,7 @@ Menu::Menu()
 	Empleado otroEmpleado("Luis", "Pelaez", 1, 4000000, fechaNacimiento, fechaIngreso, 5, "No casdo");
 	e1 = e;
 	e2 = otroEmpleado;
-	edad = 0, prestaciones = 0, antiguedad = 0, nuevoAuxilio = 0, diferenciaSalarial = 0;
+	edad = 0, prestaciones = 0, antiguedad = 0, nuevoAuxilio = 0;
 }
 
 Menu::~Menu()
@@ -28,13 +28,12 @@ void Menu::seleccionarOpcion()
 	cout << "3 - Calcular antiguedad" << endl;
 	cout << "4 - Calcular prestaciones" << endl;
 	cout << "5 - Calcular auxilio conyugal" << endl;
-	cout << "6 - Calcular Diferencia Salarial" << endl;
-	cout << "7 - Salir" << endl;
+	cout << "6 - Salir" << endl;
 	do
 	{
 		cout << "Introduza Opcion: ";
 		cin >> opcion;
-	} while (!((opcion >= 1) && (opcion <= 7)));
+	} while (!((opcion >= 1) && (opcion <= 6)));
 }
 
 void Menu::visualizar()
@@ -74,16 +73,12 @@ void Menu::visualizar()
 				cin>> porcentaje;
 				nuevoAuxilio = e1.CalcularAuxilioConyugal(porcentaje);
 				break;
-			
-			case 6:
-				diferenciaSalarial = e1.calcularDiferenciaSalarial(e2);
-				break;
 
 			}
 			system("cls");
 		}
 
-	} while (opcion != 7);
+	} while (opcion != 6);
 }
 
 void Menu::mostrarDatosPersonales()
@@ -97,6 +92,7 @@ void Menu::mostrarDatosPersonales()
 	cout << "Fecha nacimiento: " << fechaNacimiento.darDia() << "/" << fechaNacimiento.darMes() << "/" << fechaNacimiento.darAnio() << endl;
 	cout << "Fecha ingreso: " << fechaIngreso.darDia() << "/" << fechaIngreso.darMes() << "/" << fechaIngreso.darAnio() << endl;
 	cout << "Salario: " << e1.darSalario() << endl;
+	cout << "diferencia salarial = " << e1.darDiferencia() << endl;
 	cout << endl;
 }
 
@@ -117,9 +113,5 @@ void Menu::mostrarCalculos()
 	if (nuevoAuxilio > 0)
 	{
 		cout << "Nuevo Auxilio Conyugal = " << nuevoAuxilio << endl;
-	}
-	if (diferenciaSalarial > 0)
-	{
-		cout << "la diferencia salarial = " << diferenciaSalarial << endl;
 	}
 }

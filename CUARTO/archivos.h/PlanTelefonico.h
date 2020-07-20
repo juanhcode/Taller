@@ -22,4 +22,4 @@ public:
     ~PlanTelefonico();
 };
 
-#endif
+#endif //CLASSPlantelefonico
