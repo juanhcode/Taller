@@ -1,4 +1,4 @@
-#inlcude "PlanTelefonico.h"
+#include "PlanTelefonico.h"
 
 PlanTelefonico::PlanTelefonico(){
 
