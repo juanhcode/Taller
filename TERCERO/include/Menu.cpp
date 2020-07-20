@@ -3,7 +3,7 @@
 
 Menu::Menu()
 {
-	Cliente e1("juan","139282",CuentaAhorros cuentaA,);
+	//Cliente e1("juan","139282");
 }
 
 Menu::~Menu()

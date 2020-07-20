@@ -42,7 +42,7 @@ public:
     void retirarCuentaCorriente(int);
     void retirarCuentaAhorro(int);
     double saldoTotal();
-    Mes darMesActualSimulacio();
+    Mes darMesActualSimulacion();
     void avanzarMeSimulacion();
     ~Cliente();
 };

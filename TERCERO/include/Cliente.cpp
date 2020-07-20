@@ -53,7 +53,7 @@ double Cliente::saldoTotal(){
 
 }
 
-Mes Cliente::darMesActualSimulacio(){
+Mes Cliente::darMesActualSimulacion(){
 
 }
 
