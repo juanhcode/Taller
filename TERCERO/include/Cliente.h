@@ -27,8 +27,12 @@ private:
     string nombre;
     string cedula;
     CuentaCorriente cCorriente;
+    CuentaAhorros cCAhorros;
+    CDT cDT;
+    Mes mEs;
 public:
     Cliente(string nombre,string cedula, CuentaCorriente CuentaCo,CuentaAhorros CuentaAho,CDT cdt,Mes Mes1);
+    Cliente();
     string darNombre();
     string darCedula();
     void invertirCDT(int,double);

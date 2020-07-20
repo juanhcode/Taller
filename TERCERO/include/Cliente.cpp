@@ -10,9 +10,9 @@ Cliente::Cliente(string dNombre,
     nombre = dNombre;
     cedula = dCedula;
     cCorriente = dCuentaCorriente; 
-    CuentaAhorros = dCuentaAhorros;
-     CDT = dCDT;
-     Mes = dMes;
+    cCAhorros = dCuentaAhorros;
+    cDT = dCDT;
+    mEs = dMes;
  
 }
 

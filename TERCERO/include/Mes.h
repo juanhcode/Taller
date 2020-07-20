@@ -22,6 +22,7 @@ private:
     int mes;
 public:
     Mes(int);
+    Mes();
     void darMes();
     int calcularDiferenciaMeses(Mes);
     void avanzarMes();

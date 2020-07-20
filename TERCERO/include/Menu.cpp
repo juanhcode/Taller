@@ -3,12 +3,7 @@
 
 Menu::Menu()
 {
-	///Cliente e();
-	CuentaCorriente CT(50000);
-	CuentaAhorros CTA(50000,0.6);
-	CDT cdt();
-
-
+	Cliente e1("juan","139282",CuentaAhorros cuentaA,);
 }
 
 Menu::~Menu()
@@ -46,7 +41,6 @@ void Menu::visualizar()
 				case 1:
 					cout<<"Depositar saldo"<<endl;
 					cin>>saldo;
-					CuentaCorriente();
 					break;
 				
 				case 2:

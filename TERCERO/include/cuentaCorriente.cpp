@@ -8,7 +8,6 @@ CuentaCorriente::CuentaCorriente(int dSaldo)
 CuentaCorriente::~CuentaCorriente()
 {
 }
-
 void CuentaCorriente::depositarSaldo(int nuevoSaldo){
     saldo = nuevoSaldo;
 
@@ -17,6 +16,5 @@ void CuentaCorriente::depositarSaldo(int nuevoSaldo){
 int CuentaCorriente::retirarsaldo(int saldo){
     int retirar;
     saldo -= retirar;
-
     return saldo;
 }

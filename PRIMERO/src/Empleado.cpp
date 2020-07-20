@@ -15,6 +15,7 @@ E-mail: miguel.askar@correounivalle.edu.co
 using namespace std;
 
 int auxilioc;
+int resta;
 
 Empleado::Empleado(string dNombre,
 					string dApellido,
@@ -135,8 +136,11 @@ int Empleado::darNuevoAuxilio(){
 //
 ///Ejercicio 5
 int Empleado::calcularDiferenciaSalarial(Empleado otroEmpleado){
-
+	int resta;
+	resta = darSalario() - otroEmpleado.salario;
+	return resta;
 }
+
 ////
 
 

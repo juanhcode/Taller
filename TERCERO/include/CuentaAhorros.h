@@ -22,6 +22,7 @@ private:
     double interesMensual;
 public:
     CuentaAhorros(int,double);
+    CuentaAhorros();
     void pagarInteres(int saldo,double interesMensual);
     ~CuentaAhorros();
 };
