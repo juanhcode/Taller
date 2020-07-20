@@ -7,19 +7,18 @@
   Email: suMail
 */
 #include "Punto.h"
-#include"Punto.cpp"
 #include "Triangulo.h"
 #include <math.h>
 
 double puntoN1, puntoN2, puntoN3;
 
-Triangulo::Triangulo(Punto dPunto1,Punto dPunto2, Punto dPunto3)
+/*Triangulo::Triangulo(Punto dPunto1,Punto dPunto2, Punto dPunto3)
 {
     punto1 = dPunto1;
     punto2 = dPunto2;
     punto3 = dPunto3;
 }
-
+*/
 //utilice la formula de la distancia entre dos puntos para el metodo darLado1.
 //es necesario utilizar las funciones pow(x,2), sqrt(y) de la biblioteca cmath
 void cambiarX(int x1);

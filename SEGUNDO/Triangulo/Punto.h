@@ -25,7 +25,7 @@ class Punto
 
   Punto();
   Punto(int dX, int dY);
-	~Punto();
+//~Punto();
 	int darX();
 	int darY();
 	void cambiarX(int x1);
