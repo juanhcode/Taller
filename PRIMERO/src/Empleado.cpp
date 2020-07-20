@@ -14,6 +14,7 @@ E-mail: miguel.askar@correounivalle.edu.co
 
 using namespace std;
 
+int auxilioc;
 
 Empleado::Empleado(string dNombre,
 					string dApellido,
@@ -91,27 +92,29 @@ int Empleado::cantidadDeHijos()
 	return numeroHijos;
 }
 
-
+//Ejercico 2
 string Empleado::darEstado(){
 	return estado;
 }
+///
 
+//Ejercicio 3
 int Empleado::calcularAuxilioConyugal(){
 	
-	int auxilio;
-	auxilio= (sqrt(0.75 * salario));
-    return auxilio;
+	auxilioc= (sqrt(0.75 * salario));
+    return auxilioc;
 
 }
 
 int Empleado::darAuxilioC(){
 	return calcularAuxilioConyugal();
 }
+////
 
 
 double Empleado::calcularAuxilioEducativo()
 {
-	double auxilio= (darSalario() * 0.3) * cantidadDeHijos();
+	double auxilio = (darSalario() * 0.3) * cantidadDeHijos();
 	return auxilio;
 }
 
@@ -119,11 +122,23 @@ int Empleado::darAuxilioEdu(){
 	return calcularAuxilioEducativo();
 }
 
+///Ejercicio 4
+int Empleado::CalcularAuxilioConyugal(double porcentaje){
 
-int Empleado::calcularAuxilioConyugal(double porcentaje){
-	
-	int auxilio;
-	auxilio= (sqrt(porcentaje * salario));
-    return auxilio;
+	auxilioc = (sqrt(porcentaje * darSalario()));
+	return auxilioc;
 
 }
+int Empleado::darNuevoAuxilio(){
+	return CalcularAuxilioConyugal(auxilioc);
+}
+//
+///Ejercicio 5
+int Empleado::calcularDiferenciaSalarial(Empleado otroEmpleado){
+
+}
+////
+
+
+//g++ -o .\archivo.exe .\main.cpp .\Menu.cpp .\Empleado.cpp .\Fecha.cpp
+//.\archivo.exe

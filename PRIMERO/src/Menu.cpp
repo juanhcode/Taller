@@ -12,7 +12,7 @@ Menu::Menu()
 	Empleado otroEmpleado("Luis", "Pelaez", 1, 4000000, fechaNacimiento, fechaIngreso, 5, "No casdo");
 	e1 = e;
 	e2 = otroEmpleado;
-	edad = 0, prestaciones = 0, antiguedad = 0;
+	edad = 0, prestaciones = 0, antiguedad = 0, nuevoAuxilio = 0;
 }
 
 Menu::~Menu()
@@ -27,17 +27,19 @@ void Menu::seleccionarOpcion()
 	cout << "2 - Calcular edad" << endl;
 	cout << "3 - Calcular antiguedad" << endl;
 	cout << "4 - Calcular prestaciones" << endl;
-	cout << "5 - Salir" << endl;
+	cout << "5 - Calcular auxilio conyugal" << endl;
+	cout << "6 - Salir" << endl;
 	do
 	{
 		cout << "Introduza Opcion: ";
 		cin >> opcion;
-	} while (!((opcion >= 1) && (opcion <= 5)));
+	} while (!((opcion >= 1) && (opcion <= 6)));
 }
 
 void Menu::visualizar()
 {
 	int nuevoSalario = 0;
+	double porcentaje = 0;
 
 	do
 	{
@@ -65,11 +67,18 @@ void Menu::visualizar()
 			case 4:
 				prestaciones = e1.calcularPrestaciones();
 				break;
+
+			case 5:
+			    cout<<"Introduzca el Porcentaje"<<endl;	
+				cin>> porcentaje;
+				nuevoAuxilio = e1.CalcularAuxilioConyugal(porcentaje);
+				break;
+
 			}
 			system("cls");
 		}
 
-	} while (opcion != 5);
+	} while (opcion != 6);
 }
 
 void Menu::mostrarDatosPersonales()
@@ -83,7 +92,6 @@ void Menu::mostrarDatosPersonales()
 	cout << "Fecha nacimiento: " << fechaNacimiento.darDia() << "/" << fechaNacimiento.darMes() << "/" << fechaNacimiento.darAnio() << endl;
 	cout << "Fecha ingreso: " << fechaIngreso.darDia() << "/" << fechaIngreso.darMes() << "/" << fechaIngreso.darAnio() << endl;
 	cout << "Salario: " << e1.darSalario() << endl;
-	cout << "Diferencia de el Salario con el empleado 2: " << e2.darSalario() - e1.darSalario()<< endl;
 	cout << endl;
 }
 
@@ -91,14 +99,18 @@ void Menu::mostrarCalculos()
 {
 	if (edad > 0)
 	{
-		cout << "Edad= " << edad << endl;
+		cout << "Edad = " << edad << endl;
 	}
 	if (antiguedad > 0)
 	{
-		cout << "Antiguedad= " << antiguedad << endl;
+		cout << "Antiguedad = " << antiguedad << endl;
 	}
 	if (prestaciones > 0)
 	{
-		cout << "Prestaciones= " << prestaciones << endl;
+		cout << "Prestaciones = " << prestaciones << endl;
+	}
+	if (nuevoAuxilio > 0)
+	{
+		cout << "Nuevo Auxilio Conyugal = " << nuevoAuxilio << endl;
 	}
 }

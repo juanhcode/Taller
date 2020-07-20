@@ -37,20 +37,24 @@ class Empleado
 		int calcularAntiguedad();
 		int calcularPrestaciones();		
 		int cantidadDeHijos();
-		///Funcion ejercicio 2
+		//Funcion ejercicio 2
 		string darEstado();
-		/// 
+		//
 		//Estas son las funciones del ejercicio 3 
 		int calcularAuxilioConyugal();
 		int darAuxilioC();
-		/////
-		//Estas son las funciones del ejercicio 4
+		//
+		//Estas son las funciones Auxilio Educativo
 		double calcularAuxilioEducativo();
 		int darAuxilioEdu();
-		/////
+		//
+		//Funcion 5
 		int calcularDiferenciaSalarial(Empleado otroEmpleado);
-		///
-		int calcularAuxilioConyugal(double porcentaje);
+		//
+		//Estas son las funciones del ejercicio 4
+		int darNuevoAuxilio();
+		int CalcularAuxilioConyugal(double porcentaje);
+		//
 
 	private:
 		string nombre;
@@ -64,4 +68,4 @@ class Empleado
 	
 };
 
-#endif
+#endif //CLASSEMPLEADO
