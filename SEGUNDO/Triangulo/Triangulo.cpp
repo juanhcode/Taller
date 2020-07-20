@@ -3,7 +3,7 @@
   Autor: IPOO - Univalle Tulua
   Fecha Creacion: 2020
   Fecha Modificaci�n: 2020
-  Versi�n : 1.0
+  Version : 1.0
   Email: suMail
 */
 #include "Punto.h"
@@ -22,7 +22,7 @@ Triangulo::Triangulo(Punto dPunto1,Punto dPunto2, Punto dPunto3)
 
 //utilice la formula de la distancia entre dos puntos para el metodo darLado1.
 //es necesario utilizar las funciones pow(x,2), sqrt(y) de la biblioteca cmath
-void cambiarX(int x1;
+void cambiarX(int x1);
 void cambiarY(int y1, int Yy);
 void darX(int x11);
 void darY(int y1);
@@ -78,7 +78,7 @@ double Triangulo::calcularArea() //falta por implementar con base en la informac
 
 //Tenga en cuenta que area = (base * altura)/2
 //Es necesario despejar altura
-double Triangulo::calcularAltura(int area) // falta por implementar
+double Triangulo::calcularAltura() // falta por implementar
 {
     double altura = 0;
     return altura;

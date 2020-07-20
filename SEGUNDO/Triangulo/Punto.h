@@ -3,9 +3,9 @@
   Autor: IPOO - Univalle Tulua
   Fecha Creacion: 2020
   Fecha Modificaci�n: 2020
-  Versi�n : 1.0
+  Version : 1.0
   Email: suMail
-*/
+  */
 /*
    Clase: Punto
    Responsabilidad:

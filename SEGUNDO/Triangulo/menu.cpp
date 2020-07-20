@@ -1,30 +1,26 @@
 #include "menu.h"
-#include <iostream>
-#include <math.h>
-#include "Triangulo.h"
-#include "Punto.h"  
+#include <iostream> 
 using namespace std;
 Menu::Menu()
 {
   puntos = 0;
-  Triangulo Triangulito(Punto dPunto1, Punto dPunto2, Punto dPunto3);
-  //e1 = Triangulito;
+  puntos = 0;
 }
-
-Menu::~Menu(){
-  //Destructor
-}
+ 
 void Menu::mostrarMenu(){
 
   cout << endl;
-  cout << "                         TRIANGULO                   " << endl;
+  cout << " TRIANGULO  " << endl;
   cout << "1 - Crear Triangulo " << endl;
-  cout << "2 - Salir" << endl;
+  cout << "2 - Calcular Perimetro" << endl;
+  cout << "3 - Calcular Area" << endl;
+  cout << "4 - Calcular Altura" << endl;
+  cout << "5 - salir" << endl;
   do
   {
     cout << "Introduza Opcion: ";
     cin >> opcion;
-  } while (!((opcion >= 1) && (opcion <= 2)));
+  } while (!((opcion >= 1) && (opcion <= 5)));
 }
 
 
@@ -32,6 +28,31 @@ void Menu::visualizar(){
   do
   {
     switch (opcion)
+    {
+    case 1:
+      opcionAuxiliar();
+      break;
+    
+    case 2:
+      break;
+    
+    case 3:
+      break;
+    
+    case 4:
+      break;
+    
+
+    default:
+      break;
+    }
+  }
+  while(opcion!=5);
+}
+
+
+void Menu::opcionAuxiliar(){
+  switch (opcion)
     {
       case 1:
       cout<<"Introducir Puntos de la primera coordenada"<<endl;
@@ -51,8 +72,6 @@ void Menu::visualizar(){
       case 4:
       break;
     }
-  }
-  while(opcion!=2);
 }
   
         

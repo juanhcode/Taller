@@ -6,12 +6,11 @@
   VersiOn : 1.0
   Email: suMail
 */
-/*
-   Clase: Triangulo
-   Responsabilidad: La clase triangulo tiene la funcion de de calcular todas las operaciones que el usuario quiera saber 
+
+  /*Clase: Triangulo
+  Responsabilidad: La clase triangulo tiene la funcion de de calcular todas las operaciones que el usuario quiera saber 
                     acerca del triangulo
-   ColaboraciOn:Punto.h
-*/
+  Colaboracion:Punto.h*/
 #ifndef __CLASSTRIANGULO
 #define __CLASSTRIANGULO
 #include "Punto.h" 
