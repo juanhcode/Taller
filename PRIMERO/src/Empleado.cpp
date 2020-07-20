@@ -141,9 +141,7 @@ int Empleado::calcularDiferenciaSalarial(Empleado otroEmpleado){
 	return diferencia;
 }
 
-int Empleado::darDiferencia(){
-	return calcularDiferenciaSalarial(Empleado());
-}
+
 ////resta=empleado2 
 ////resta-empleado1
 

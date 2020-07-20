@@ -92,7 +92,7 @@ void Menu::mostrarDatosPersonales()
 	cout << "Fecha nacimiento: " << fechaNacimiento.darDia() << "/" << fechaNacimiento.darMes() << "/" << fechaNacimiento.darAnio() << endl;
 	cout << "Fecha ingreso: " << fechaIngreso.darDia() << "/" << fechaIngreso.darMes() << "/" << fechaIngreso.darAnio() << endl;
 	cout << "Salario: " << e1.darSalario() << endl;
-	cout << "diferencia salarial = " << e1.darDiferencia() << endl;
+	cout << "diferencia salarial = " << e1.calcularDiferenciaSalarial(e2) << endl;
 	cout << endl;
 }
 
