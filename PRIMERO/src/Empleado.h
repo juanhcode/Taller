@@ -50,7 +50,6 @@ class Empleado
 		//
 		//Funcion 5
 		int calcularDiferenciaSalarial(Empleado otroEmpleado);
-		int darDiferencia();
 		//
 		//Estas son las funciones del ejercicio 4
 		int darNuevoAuxilio();

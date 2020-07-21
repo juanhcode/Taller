@@ -142,9 +142,5 @@ int Empleado::calcularDiferenciaSalarial(Empleado otroEmpleado){
 }
 
 
-////resta=empleado2 
-////resta-empleado1
-
-
 //g++ -o .\archivo.exe .\main.cpp .\Menu.cpp .\Empleado.cpp .\Fecha.cpp
 //.\archivo.exe
