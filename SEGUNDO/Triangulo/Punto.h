@@ -21,11 +21,11 @@ class Punto
   private:
      int x;
      int y;
-  public:
 
-  Punto();
+  public:
   Punto(int dX, int dY);
-//~Punto();
+  Punto();
+  ~Punto();
 	int darX();
 	int darY();
 	void cambiarX(int x1);

@@ -4,7 +4,6 @@ using namespace std;
 Menu::Menu()
 {
   puntos = 0;
-  puntos = 0;
 }
  
 void Menu::mostrarMenu(){
