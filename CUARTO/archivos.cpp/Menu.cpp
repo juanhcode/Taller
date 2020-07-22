@@ -1,6 +1,6 @@
 #include "Menu.h"
-#include <cstdlib>
-
+#include <iostream>
+using namespace std;
 Menu::Menu()
 {
 	opcion = 0;
@@ -13,7 +13,7 @@ Menu::~Menu()
 
 void Menu::seleccionarOpcion()
 {
-	cout << endl;
+	cout<<endl;
 	cout << "1 - Registro de llamada" << endl;
 	cout << "2 - Mostrar la información" << endl;
 	cout << "3 - Mostrar un consolidado" << endl;
@@ -59,4 +59,11 @@ void Menu::visualizar()
 		}
 
 	} while (opcion != 4);
+}
+void Menu::mostrarCalculos(){
+
+}
+
+void Menu::mostrarDatosPersonales(){
+	
 }

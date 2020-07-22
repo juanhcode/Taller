@@ -1,9 +1,3 @@
-#include <iostream>
-#include <string>
-#include <stdlib.h>
-
-using namespace std;
-
 #ifndef __CLASSMENU
 #define __CLASSMENU 
 

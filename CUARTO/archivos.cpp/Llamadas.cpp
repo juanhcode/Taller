@@ -1,6 +1,8 @@
 #include "Llamadas.h"
 
-LLamadas::llamadas
+Llamadas::Llamadas(){
+    
+}
 
 Llamadas::~Llamadas (){
 

@@ -7,21 +7,15 @@ Fecha de ultima modificacion: 18/7/2020
 Autor: emanuel benjumea - 201958950-2711
 E-mail:
 */
-
-
-
-#include "Llamadas.h"
 #ifndef __CLASSINFORMACION
 #define __CLASSINFORMACION
-
-
 class Informacion
 {
 private:
     int fechaConsolidado;
 public:
-    //coloque aqui el cosntructor
-    //coloque aqui el destructor
+    Informacion();
+    ~Informacion();
     int llamadasRealizadas(int registarLlamadas);
     int costoLlamadas(int costoTresLineas);
 

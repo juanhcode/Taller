@@ -10,11 +10,11 @@ int PlanTelefonico::minLlamadaLocal(){
     
 }
 
-int PlanTelefonico::minLlamadaLocal(){
+int PlanTelefonico::minLlamadalarga(){
     
 }
 
-int PlanTelefonico::minLlamadaLocal(){
+int PlanTelefonico::minLlamadaCelular(){
     
 }
 

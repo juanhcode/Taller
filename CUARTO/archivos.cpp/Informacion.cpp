@@ -10,7 +10,7 @@ Informacion::~Informacion(){
     
 }
 
-int Informacion::LlamadasRealizadas(int RegistrarLlamadas){
+int Informacion::llamadasRealizadas(int RegistrarLlamadas){
   
 }
 
