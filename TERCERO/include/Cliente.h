@@ -4,7 +4,10 @@
   Fecha Creacion: 2020
   Fecha Modificacion: 2020
   Version : 1.0
-  Email: suMail
+  Email: juan.manuel.hoyos@correounivalle.edu.co
+  emanuel.benjumea@correounivalle.edu.co
+  cifuentes.sebastian@correounivalle.edu.co
+  Lui.alegria@correounivalle.edu.co
 */
 /*
    Clase: Punto
@@ -17,8 +20,8 @@
 #define __CLASSCLIENTE
 #include "Mes.h"
 #include "CuentaCorriente.h"
-#include "CDT.h"
 #include "CuentaAhorros.h"
+#include "CDT.h"
 #include <iostream>
 using namespace std;
 class Cliente
@@ -30,19 +33,28 @@ private:
     CuentaAhorros cCAhorros;
     CDT cDT;
     Mes mEs;
+    
 public:
-    Cliente(string nombre,string cedula, CuentaCorriente CuentaCo,CuentaAhorros CuentaAho,CDT cdt,Mes Mes1);
+    Cliente(string nombre,string cedula,CuentaCorriente CuentaCo, CuentaAhorros CuentaAho,CDT cDT,Mes mE);
     Cliente();
     string darNombre();
     string darCedula();
-    void invertirCDT(int,double);
-    void consignarCuentaAhorro(int);
-    void cerrarCDT();
+    //CUENTA CORRIENTE
     void consignarCuentaCorriente(int);
     void retirarCuentaCorriente(int);
+    //
+    // CUENTA AHORRO
     void retirarCuentaAhorro(int);
+    void consignarCuentaAhorro(int);
+    //
+    //CUENTA CDT
+    void invertirCDT(int,double);
+    void cerrarCDT();
+    //
+    //SALDO TOTAL SUMA DE LOS 3 PRODUCTOS
     double saldoTotal();
-    Mes darMesActualSimulacion();
+    //
+    //Mes darMesActualSimulacion();
     void avanzarMeSimulacion();
     ~Cliente();
 };

@@ -1,10 +1,23 @@
-#include "./Mes.h"
+#include "Mes.h"
+
+Mes::Mes(int dMes){
+    mes = dMes;
+}
+
+Mes::Mes(){
+
+}
+
+Mes::~Mes(){
+
+}
+
 
 void Mes:: darMes(){
 
 }
 
-int Mes::calcularDiferenciaMeses(Mes){
+int Mes::calcularDiferenciaMeses(Mes otroMes){
 
 }
 

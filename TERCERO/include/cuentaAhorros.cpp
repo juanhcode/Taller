@@ -6,6 +6,10 @@ CuentaAhorros::CuentaAhorros(int dSaldo,double dInteresMensual)
     interesMensual = dInteresMensual;
 }
 
+CuentaAhorros::CuentaAhorros(){
+    
+}
+
 CuentaAhorros::~CuentaAhorros()
 {
     //Destructor

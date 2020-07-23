@@ -4,7 +4,10 @@
   Fecha Creacion: 2020
   Fecha Modificacion: 2020
   Version : 1.0
-  Email: suMail
+  Email: juan.manuel.hoyos@correounivalle.edu.co
+  emanuel.benjumea@correounivalle.edu.co
+  cifuentes.sebastian@correounivalle.edu.co
+  Lui.alegria@correounivalle.edu.co
 */
 /*
    Clase: Punto
@@ -21,7 +24,7 @@ private:
     int saldo;
     double interesMensual;
 public:
-    CuentaAhorros(int,double);
+    CuentaAhorros(int dSaldo,double dInteresMensual);
     CuentaAhorros();
     void pagarInteres(int saldo,double interesMensual);
     ~CuentaAhorros();

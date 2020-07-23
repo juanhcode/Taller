@@ -4,7 +4,10 @@
   Fecha Creacion: 2020
   Fecha Modificacion: 2020
   Version : 1.0
-  Email: suMail
+  Email: juan.manuel.hoyos@correounivalle.edu.co
+  emanuel.benjumea@correounivalle.edu.co
+  cifuentes.sebastian@correounivalle.edu.co
+  Lui.alegria@correounivalle.edu.co
 */
 /*
    Clase: CDT
@@ -15,7 +18,6 @@
 */
 #ifndef __CLASSCDT
 #define __CLASSCDT
-#include "Cliente.h"
 class CDT
 {
 private:

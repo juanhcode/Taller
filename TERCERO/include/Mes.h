@@ -4,11 +4,14 @@
   Fecha Creacion: 2020
   Fecha Modificacion: 2020
   Version : 1.0
-  Email: suMail
+  Email: juan.manuel.hoyos@correounivalle.edu.co
+  emanuel.benjumea@correounivalle.edu.co
+  cifuentes.sebastian@correounivalle.edu.co
+  Lui.alegria@correounivalle.edu.co
 */
-#ifndef __MES
-#define __MES
-#include "Cliente.h"
+#ifndef __CLASSMES
+#define __CLASSMES
+
 /*
    Clase: Punto
    Responsabilidad:
@@ -21,10 +24,10 @@ class Mes
 private:
     int mes;
 public:
-    Mes(int);
+    Mes(int dMes);
     Mes();
     void darMes();
-    int calcularDiferenciaMeses(Mes);
+    int calcularDiferenciaMeses(Mes otroMes);
     void avanzarMes();
     ~Mes();
 };

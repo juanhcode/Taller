@@ -3,7 +3,13 @@
 
 Menu::Menu()
 {
-	//Cliente e1("juan","139282");
+	opcion = 0;
+	cDT = CDT();
+	CuentaCo = CuentaCorriente();
+	CuentaAho = CuentaAhorros();
+	mEs = Mes(7);
+	Cliente primero("Juan", "100123",CuentaCo,CuentaAho,cDT,mEs);
+	e1 = primero;
 }
 
 Menu::~Menu()
@@ -15,8 +21,8 @@ void Menu::seleccionarOpcion()
 {
 	cout<<"    SIMULADOR BANCARIO"      <<endl;
 	cout<<"Hacer Operaciones"<<endl;
-	cout<<"1 - Cuenta Ahorro" << endl;
-	cout<<"2 - Cuenta Corriente" << endl;
+	cout<<"1 - Cuenta Corriente" << endl;
+	cout<<"2 - Cuenta Ahorro" << endl;
 	cout<<"3 - CDT" << endl;
 	cout<<"4 - Avanzar mes por mes en el Tiempo" << endl;
 	cout<<"5 - Salir" << endl;
@@ -29,7 +35,6 @@ void Menu::seleccionarOpcion()
 
 void Menu::visualizar()
 {
-	int nuevoDinero= 0;
 	do
 	{
 		mostrarDatosPersonales();
@@ -39,11 +44,26 @@ void Menu::visualizar()
 			switch(opcion)
 			{
 				case 1:
-					cout<<"Depositar saldo"<<endl;
-					cin>>saldo;
+					cout<<"1. Depositar"<<endl;
+					cout<<"2. Retirar"<<endl;
+					cin>>opcion;
+					switch (opcion)
+					{
+					case 1:
+						cout<<"cantidad a depositar"<<endl;
+						break;
+					case 2:
+						
+						break;
+					default:
+						break;
+					}
+				
 					break;
 				
 				case 2:
+					cout<<"Pagar interes"<<endl;
+
 					break;
 				
 				case 3: 
@@ -61,16 +81,12 @@ void Menu::visualizar()
  
 void Menu::mostrarDatosPersonales()
 {
-	cout<< "Nombre: " <<endl;
-	cout<< "Cedula: " << endl;
+	cout<< "Nombre: " <<e1.darNombre() <<endl;
+	cout<< "Cedula: " <<e1.darCedula() <<endl;
 	cout<< endl;
 }
 
 void Menu::mostrarCalculos()
 {
-	if (saldo > 0)
-	{
-		cout << "saldo = " <<saldo << endl;
-	}
 
 }
