@@ -13,6 +13,9 @@ Punto::Punto(int dX, int dY )
     y = dY;
 }
 
+Punto::Punto(){
+    
+}
 Punto::~Punto(){
 }
 
