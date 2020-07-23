@@ -39,13 +39,12 @@ void Menu::visualizar()
 	do
 	{
 		mostrarDatosPersonales();
-		//mostrarCalculos();
+		mostrarCalculos();
 		seleccionarOpcion();
 		{
 			switch(opcion)
 			{
 				case 1:
-					cout<<endl;
 					cout<<"1. Depositar"<<endl;
 					cout<<"2. Retirar"<<endl;
 					cout<<"Intruduzca una opcion"<<endl;
@@ -95,5 +94,5 @@ void Menu::mostrarDatosPersonales()
 
 void Menu::mostrarCalculos()
 {
-	//cout<<"Saldo: " << e1.darCuentaCorriente()<<endl;
+	cout<<"Saldo: " << e1.darCuentaCorriente()<<endl;
 }

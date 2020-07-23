@@ -43,14 +43,12 @@ void Cliente::retirarCuentaCorriente(int saldoCC){
 
 void Cliente::consignarCuentaCorriente(int saldoCC){
     
-     int co;
-     co = (saldoCC + cCorriente.darSaldoCC()); 
+     cCorriente.consignarSaldo(saldoCC);
 }
 
 int Cliente::darCuentaCorriente(){
-    int cuenta;
-    consignarCuentaCorriente(cuenta);
-    return cuenta;
+    
+    return cCorriente.darSaldoCC();
 }
 //
 

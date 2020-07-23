@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
 	Menu menuT;
-	menuT.visualizar();
+	menuT.mostrarMenu();
 	return 0;
 }
 

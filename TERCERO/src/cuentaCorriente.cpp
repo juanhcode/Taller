@@ -6,7 +6,7 @@ CuentaCorriente::CuentaCorriente(int dSaldo)
 }
 
 CuentaCorriente::CuentaCorriente(){
-    
+    saldo = 0;
 }
 
 CuentaCorriente::~CuentaCorriente()
@@ -17,6 +17,11 @@ int CuentaCorriente::darSaldoCC(){
     return saldo;
 }
 
-int CuentaCorriente::mostrarSaldo(){
-    return darSaldoCC();
+void CuentaCorriente::consignarSaldo(int consignacion){
+
+    saldo +=  consignacion;
 }
+
+/*int CuentaCorriente::mostrarSaldo(){
+    return darSaldoCC();
+}*/

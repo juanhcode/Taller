@@ -19,13 +19,13 @@ void Menu::mostrarMenu(){
   {
     cout << "Introduza Opcion: ";
     cin >> opcion;
+    visualizar();
   } while (!((opcion >= 1) && (opcion <= 5)));
 }
 
 
 void Menu::visualizar(){
-  do
-  {
+  
     switch (opcion)
     {
     case 1:
@@ -45,8 +45,7 @@ void Menu::visualizar(){
     default:
       break;
     }
-  }
-  while(opcion!=5);
+  
 }
 
 
