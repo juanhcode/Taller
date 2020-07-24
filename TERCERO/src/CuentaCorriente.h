@@ -26,8 +26,10 @@ private:
 public:
     CuentaCorriente(int dSaldo);
     CuentaCorriente();
+    //Consignar
     int darSaldoCC();
     void consignarSaldo(int consignacion);
+    //Retirar
     void retirarSaldo(int descontar);
     int darCuentaCorriente();
     ~CuentaCorriente();

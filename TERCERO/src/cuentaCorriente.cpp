@@ -1,11 +1,14 @@
 #include "CuentaCorriente.h"
+#include <iostream>
+using namespace std;
 
 CuentaCorriente::CuentaCorriente(int dSaldo)
 {
     saldo = dSaldo;
 }
 
-CuentaCorriente::CuentaCorriente(){
+CuentaCorriente::CuentaCorriente()
+{
     saldo = 0;
 }
 
@@ -13,15 +16,30 @@ CuentaCorriente::~CuentaCorriente()
 {
 }
 
-int CuentaCorriente::darSaldoCC(){
+///DEPOSITAR
+int CuentaCorriente::darSaldoCC()
+{
     return saldo;
 }
 
-void CuentaCorriente::consignarSaldo(int consignacion){
+void CuentaCorriente::consignarSaldo(int consignacion)
+{
 
-    saldo +=  consignacion;
+    saldo += consignacion;
 }
+//////
 
-/*int CuentaCorriente::mostrarSaldo(){
-    return darSaldoCC();
-}*/
+//RETIRAR
+void CuentaCorriente::retirarSaldo(int descontar)
+{
+
+    if (saldo > descontar)
+    {
+        saldo -= descontar;
+    }
+    else
+    {
+        cout << "no se pudo realizar la operacion" << endl;
+    }
+    system("cls");
+}

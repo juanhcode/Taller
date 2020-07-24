@@ -44,6 +44,9 @@ public:
   void visualizar();
   void mostrarDatosPersonales();
   void mostrarCalculos();
+  void mostrarCalculosCA();
+  void auxiliar();
+
 
 };
 

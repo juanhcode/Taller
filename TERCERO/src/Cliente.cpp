@@ -38,7 +38,8 @@ string Cliente::darCedula(){
 }
 //CUENTA CORIENTE
 void Cliente::retirarCuentaCorriente(int saldoCC){
-       
+
+     cCorriente.retirarSaldo(saldoCC);
 }
 
 void Cliente::consignarCuentaCorriente(int saldoCC){
@@ -52,16 +53,26 @@ int Cliente::darCuentaCorriente(){
 }
 //
 
+
 // CUENTA AHORRO
-void Cliente::consignarCuentaAhorro(int){
+void Cliente::consignarCuentaAhorro(int darSaldoCA){
 
+    cCAhorros.consignarSaldoCA(darSaldoCA);
 }
 
-void Cliente::retirarCuentaAhorro(int){
+void Cliente::retirarCuentaAhorro(int SaldoCA){
 
+    cCAhorros.retirarCuentaAhorro(SaldoCA);
+    
 }
+int Cliente::darCuentaAhorro(){
+
+    return cCAhorros.darSaldoCA();
+}
+//
 
 // CUENTA CDT
+
 void Cliente::invertirCDT(int,double){
 
 }
@@ -76,6 +87,13 @@ double Cliente::saldoTotal(){
 
 }
 //
+
+void Cliente::interesMensualCA(){
+    int mult;
+
+    mult = ((cCAhorros.darSaldoCA() * 0.06) - cCAhorros.darInteresMensual());
+
+}
 
 /*Mes Cliente::darMesActualSimulacion(){
 

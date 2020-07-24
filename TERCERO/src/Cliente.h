@@ -45,8 +45,10 @@ public:
     int darCuentaCorriente(); 
     //
     // CUENTA AHORRO
-    void retirarCuentaAhorro(int);
-    void consignarCuentaAhorro(int);   
+    void retirarCuentaAhorro(int saldoCA);
+    void consignarCuentaAhorro(int saldoCA);
+    int darCuentaAhorro();
+    void interesMensualCA();
     //
     //CUENTA CDT
     void invertirCDT(int,double);

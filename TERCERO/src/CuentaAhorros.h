@@ -26,8 +26,19 @@ private:
 public:
     CuentaAhorros(int dSaldo,double dInteresMensual);
     CuentaAhorros();
-    void pagarInteres(int saldo,double interesMensual);
     ~CuentaAhorros();
+    //Depositar
+    int darSaldoCA();
+    void consignarSaldoCA(int consigarCA);
+    //
+    //Retirar
+    void retirarCuentaAhorro(int descontarCA);
+    //Calcular interes mensual
+    int darInteresMensual();
+
+
+
+    //void pagarInteres(int saldo,double interesMensual);
 };
 
 #endif // __CLASCUENTAAHORROS
