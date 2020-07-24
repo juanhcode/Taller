@@ -15,7 +15,7 @@ void Menu::seleccionarOpcion()
 {
 	cout<<endl;
 	cout << "1 - Registro de llamada" << endl;
-	cout << "2 - Mostrar la información" << endl;
+	cout << "2 - Mostrar la informacion" << endl;
 	cout << "3 - Mostrar un consolidado" << endl;
 	cout << "4 - Salir" << endl;
 	do
