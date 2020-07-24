@@ -2,9 +2,14 @@
   Nombre: Punto.cpp
   Autor: IPOO - Univalle Tulua
   Fecha Creacion: 2020
-  Fecha Modificación: 2020
-  Versión : 1.0
-  Email: suMail
+  Fecha Modificacion: 2020
+  Version : 1.0
+  Email: Emanuel.benjumea@correounivalle.edu.co
+         Lui.alegria@correounivalle.com
+         gallego.cesar@correounivalle.edu.co
+         vargas.steven@correounivalle.edu.co
+         juan.manuel.hoyos@correounivalle.edu.co
+
 */
 
 #include "Punto.h"
