@@ -8,6 +8,7 @@
   emanuel.benjumea@correounivalle.edu.co
   cifuentes.sebastian@correounivalle.edu.co
   Lui.alegria@correounivalle.edu.co
+  vargas.steven@correounivalle.edu.co
 */
 /*
    Clase: CDT

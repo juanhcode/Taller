@@ -27,7 +27,7 @@ void Menu::seleccionarOpcion()
 	cout << "1 - Cuenta Corriente" << endl;
 	cout << "2 - Cuenta Ahorro" << endl;
 	cout << "3 - CDT" << endl;
-	cout << "4 - Avanzar mes por mes" << endl;
+	cout << "4 - Simulador Mes a Mes" << endl;
 	cout << "5 - Saldo total" << endl;
 	cout << "6 - Salir" << endl;
 	do
@@ -47,7 +47,6 @@ void Menu::visualizar()
 	do
 	{
 		mostrarDatosPersonales();
-		mostrarCalculosF();
 		seleccionarOpcion();
 		{
 			switch (opcion)
@@ -75,6 +74,7 @@ void Menu::visualizar()
 				case 3:
 					break;
 				default:
+					cout << "Opcion invalida" << endl;
 					break;
 				}
 
@@ -109,30 +109,31 @@ void Menu::visualizar()
 			case 3:
 				cout << "1. Invertir Dinero" << endl;
 				cout << "2. Cerrar Cuenta" << endl;
-				cout << "Intruduzca una opcion" << endl;
+				cout << "3. Volver al menu" << endl;
+				cout << "Introduzca una opcion" << endl;
 				cin >> opcion;
 				switch (opcion)
-				{
+				{s
 				case 1:
 					mostrarInCDT();
 					cout << "1.Cantidad de dinero / interes mensual" << endl;
 					cout << "2.Cantidad de Meses" << endl;
+					cout << "3. Volver al menu" << endl;
+					cin >> opcion;
 					switch (opcion)
 					{
 					case 1:
 						cout << "Digite la cantidad de dinero que quiere invertir" << endl;
 						cin >> dineroCDT;
-						cout << "Digite el interes mensual" << endl;
-						cin >> interesM;
-						e1.invertirCDT(dineroCDT, interesM, cantidadM);
+						e1.invertirCDT(dineroCDT, interesM);
 						break;
-
-					case 3:
+					case 2:
 						cout << "Digite la cantidad de Meses" << endl;
 						cin >> cantidadM;
 						break;
 
 					default:
+						cout << "Opcion invalida" << endl;
 						break;
 					}
 					break;
@@ -141,6 +142,7 @@ void Menu::visualizar()
 					cin >> opcion;
 					break;
 				default:
+					cout << "Opcion invalida" << endl;
 					break;
 				}
 				break;
@@ -149,7 +151,9 @@ void Menu::visualizar()
 				break;
 
 			case 5:
+				mostrarCalculosF();
 				saldoTotal = e1.saldoTotal();
+				system("pause");
 				break;
 			}
 
@@ -184,8 +188,6 @@ void Menu::mostrarInCDT()
 }
 void Menu::mostrarCalculosF()
 {
-	
-	cout << "saldo total = " << e1.saldoTotal() << endl;
-	
-}
 
+	cout << "saldo total = " << e1.saldoTotal() << endl;
+}

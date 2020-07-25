@@ -79,17 +79,11 @@ void Cliente::interesMensualCA(){
 
 // CUENTA CDT
 
-void Cliente::invertirCDT(int dineroCDT,double interesM,int cantidadM){
+void Cliente::invertirCDT(int dineroCDT,double interesM){
 
-    pow(dineroCDT,2)+(interesM * cantidadM);
+    pow(dineroCDT,2)+(interesM);
 
 }
-
-/*int Cliente::calcularMes(int cantidadM){
-
-    //calcularMes(cantidadM);
-    return calcularMes(cantidadM);
-}*/
 
 
 void Cliente::cerrarCDT(){
@@ -103,13 +97,13 @@ double Cliente::saldoTotal(){
 }
 //
 
-/*Mes Cliente::darMesActualSimulacion(){
+Mes Cliente::darMesActualSimulacion(){
 
-}*/
+}
 
-/*void Cliente::avanzarMeSimulacion(){
+void Cliente::avanzarMeSimulacion(){
     
-}*/
+}
 
 //g++ -o archivo.exe .\CDT.cpp .\Cliente.cpp .\cuentaAhorros.cpp .\cuentaCorriente.cpp .\main.cpp .\Menu.cpp .\Mes.cpp
 //archivo.exe

@@ -8,6 +8,7 @@
   emanuel.benjumea@correounivalle.edu.co
   cifuentes.sebastian@correounivalle.edu.co
   Lui.alegria@correounivalle.edu.co
+  vargas.steven@correounivalle.edu.co
 */
 /*
    Clase: Punto
@@ -51,17 +52,14 @@ public:
     void interesMensualCA();
     //
     //CUENTA CDT
-    void invertirCDT(int dineroCDT,double interesM,int cantidadM);
-    //int calcularMes(int cantidadM);
+    void invertirCDT(int dineroCDT,double interesM);
     void cerrarCDT();
     int mostrarInvertirCDT();
-    //double darInteresMensualCD();
-    //int darMesCD();
     //
     //SALDO TOTAL SUMA DE LOS 3 PRODUCTOS
     double saldoTotal();
     //
-    //Mes darMesActualSimulacion();
+    Mes darMesActualSimulacion();
     void avanzarMeSimulacion();
     ~Cliente();
 };
