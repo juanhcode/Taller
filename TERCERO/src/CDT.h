@@ -13,8 +13,7 @@
 /*
    Clase: CDT
    Responsabilidad:
-    -
-    - 
+    dar el interes Mensual y valor invertido
    Colaboracion: ninguna
 */
 #ifndef __CLASSCDT

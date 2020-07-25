@@ -113,7 +113,7 @@ void Menu::visualizar()
 				cout << "Introduzca una opcion" << endl;
 				cin >> opcion;
 				switch (opcion)
-				{s
+				{
 				case 1:
 					mostrarInCDT();
 					cout << "1.Cantidad de dinero / interes mensual" << endl;

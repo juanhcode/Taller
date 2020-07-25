@@ -48,7 +48,6 @@ public:
   void mostrarCalculos();
   void mostrarCalculosCA();
   void mostrarCalculosF();
-  void auxiliar();
   void mostrarInCDT();
 
 };

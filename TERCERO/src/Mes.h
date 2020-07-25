@@ -14,10 +14,9 @@
 #define __CLASSMES
 
 /*
-   Clase: Punto
+   Clase: Mes
    Responsabilidad:
-    - 
-    - 
+   se calcula la diferencia de meses
    Colaboracion: ninguna
 */
 class Mes

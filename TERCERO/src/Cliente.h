@@ -11,10 +11,14 @@
   vargas.steven@correounivalle.edu.co
 */
 /*
-   Clase: Punto
+   Clase: Cliente
    Responsabilidad:
-    - 
-    - 
+    consignar y retirar en cuenta corriente
+    consignar y retirar en cuenta ahorro
+    invertir dinero en CDT
+    dar el saldo total de las 3 cuentas
+    dar el Mes  Actual para la simulacion 
+
    Colaboracion: ninguna
 */
 #ifndef __CLASSCLIENTE

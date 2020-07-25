@@ -14,8 +14,7 @@
 /*
    Clase: CuentaCorriente
    Responsabilidad:
-    - 
-    - 
+   consignar saldo y retirar el saldo de la cuenta
    Colaboracion: ninguna
 */
 #ifndef __CLASSCUENTACORRIENTE
