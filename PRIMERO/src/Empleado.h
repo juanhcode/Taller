@@ -4,12 +4,22 @@ Version: 0.1
 Fecha de creacion: 6/7/2020
 Fecha de ultima modificacion: 6/7/2020
 Autor:Juan Manuel Hoyos Contreras - 201958950-2711
-E-mail:
+     : Luis alberto alegria riascos -201958640-2711
+     : Emanuel benjumea bejarano - 201958941-2711
+     : cesar augusto gallego niño 1958553-2711
+     : Steven Vargas González 1958675-2711
+	 :
+E-mail:				:juan.manuel.hoyos@correounivalle.edu.co
+    				: vargas.steven@correounivalle.edu.co
+                    : Emanuel.benjumea@correounivalle.edu.co
+                    : gallego.cesar@correounivalle.edu.co
+                    : Lui.alegria@correounivalle.edu.co
+					:
 */
 
 /*CRC
 Clase: Empleado 
-Responsabilidad: Cambiar y mostrar salario, Calcular edad, Prestaciones, y antiguedad del empleado.
+Responsabilidad: Cambiar y mostrar salario,estado, Calcular edad, Prestaciones, y antiguedad del empleado.
 Colaboracion: Fecha.h
 */
 

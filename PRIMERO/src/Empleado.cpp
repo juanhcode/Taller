@@ -3,8 +3,8 @@ Nombre de archivo: Empleado.cpp
 Version: 0.1
 Fecha de creacion: 6/7/2020
 Fecha de ultima modificacion: 6/7/2020
-Autor: Juan Manuel Hoyos Contreras - 201958950-2711
-E-mail: miguel.askar@correounivalle.edu.co
+Autor: 
+E-mail: 
 */
 
 #include "Empleado.h"
