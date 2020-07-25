@@ -48,6 +48,7 @@ void Menu::visualizar()
 				mostrarCalculos();
 				cout << "1. Depositar" << endl;
 				cout << "2. Retirar" << endl;
+				cout << "3. Volver al menu" << endl;
 				cout << "Intruduzca una opcion" << endl;
 				cin >> opcion;
 				switch (opcion)
@@ -62,6 +63,8 @@ void Menu::visualizar()
 					cout << "Cantidad a Retirar" << endl;
 					cin >> saldoCC;
 					e1.retirarCuentaCorriente(saldoCC);
+					break;
+				case 3:
 					break;
 				default:
 					break;

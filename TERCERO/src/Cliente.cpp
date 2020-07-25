@@ -28,7 +28,7 @@ Cliente::Cliente(){
 Cliente::~Cliente()
 {
 }
-
+//Datos Personales
 string Cliente::darNombre(){
     return nombre;
 }
@@ -36,6 +36,7 @@ string Cliente::darNombre(){
 string Cliente::darCedula(){
     return cedula;
 }
+//
 //CUENTA CORIENTE
 void Cliente::retirarCuentaCorriente(int saldoCC){
 
@@ -52,7 +53,6 @@ int Cliente::darCuentaCorriente(){
     return cCorriente.darSaldoCC();
 }
 //
-
 
 // CUENTA AHORRO
 void Cliente::consignarCuentaAhorro(int darSaldoCA){
@@ -91,7 +91,7 @@ double Cliente::saldoTotal(){
 void Cliente::interesMensualCA(){
     int mult;
 
-    mult = ((cCAhorros.darSaldoCA() * 0.06) - cCAhorros.darInteresMensual());
+    mult = ((cCAhorros.darSaldoCA() * 0.006) - cCAhorros.darInteresMensual());
 
 }
 

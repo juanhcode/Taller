@@ -29,7 +29,7 @@ void CuentaAhorros::retirarCuentaAhorro(int descontarCA){
 }
 //
 
-int CuentaAhorros::calcularInteresMensual(){
+int CuentaAhorros::darInteresMensual(){
     return interesMensual;
 }
 
