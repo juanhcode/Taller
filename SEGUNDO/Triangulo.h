@@ -33,10 +33,8 @@ class Triangulo
   public:
 	Triangulo(Punto dPunto1, Punto dPunto2, Punto dPunto3);
   Triangulo();
-	//Lado 1
   double calcularLado1();
   double mostrarLado1();
-  //
 	double calcularLado2();
 	double calcularLado3();
 	double calcularPerimetro();

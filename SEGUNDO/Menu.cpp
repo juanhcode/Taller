@@ -1,5 +1,6 @@
 #include "Menu.h"
 #include <iostream>
+#include "Triangulo.h"
 using namespace std;
 Menu::Menu()
 {
@@ -11,16 +12,16 @@ Menu::Menu()
     triangulito = e1;
 }
 
-Menu::~Menu(){
-
-
+Menu::~Menu()
+{
+ 
 }
 void Menu::seleccionarOpcion()
 {
 
     cout << endl;
     cout << " TRIANGULO  " << endl;
-    cout << "1 - Crear Triangulo " << endl;
+    cout << "1 - Calcular Lados " << endl;
     cout << "2 - Calcular Perimetro" << endl;
     cout << "3 - Calcular Area" << endl;
     cout << "4 - Calcular Altura" << endl;
@@ -38,11 +39,13 @@ void Menu::visualizar()
 
     switch (opcion)
     {
+    
     case 1:
         opcionAuxiliar();
         break;
 
     case 2:
+
         perimetro = e1.calcularPerimetro();
         break;
 
@@ -57,67 +60,72 @@ void Menu::visualizar()
     case 5:
         break;
     }
-    system("cls");
+    
 }
 
 void Menu::opcionAuxiliar()
 {
-    int x1,x2;
-    int y1,y2;
+    double x1,x2;
+    double y1,y2;
+    double distancia = 0;
     switch (opcion)
     {
     case 1:
-        mostrarLado1();
-        cout << "Introducir Puntos de la primera coordenada" << endl;
+       // mostrarLado1();     
+        cout << "Introducir Puntos de la primera coordenada para calcular lado AB" << endl;
         cout<<"1. Valor x2"<<endl;
+        cin>>x2;
         cout<<"2. Valor x1"<<endl;
+        cin>>x1;
         cout<<"3. Valor y2"<<endl;
+        cin>>y2;
         cout<<"4. Valor y1"<<endl;
-        cout<<"5. Calcular Lado 1"<<endl;
-        cout<<"Introduzca una opcion"<<endl;
-        cin>>opcion;
-        cout << endl;
-        switch (opcion)
-        {
-        case 1:
-            cout<<"Digite el valor de x2"<<endl;
-            cin>>x2;
-        case 2:
-            cout<<"Digite el valor de x1"<<endl;
-            cin>>x1;
-        case 3:
-            cout<<"Digite el valor de y2"<<endl;
-            cin>>y2;
-        case 4:
-            cout<<"Digite el valor de y1"<<endl;
-            cin>>y1;
-        case 5:
-            e1.calcularLado1();
-        default:
-            cout<<"Opcion invalida"<<endl;
-        }
-        break;
-
-    case 2:
-        cout << "Introducir Puntos de la Segunda coordenada" << endl;
-        cout << endl;
-        cout << "Digite el valor"<<endl;
-        cin >> puntos;
-
-        break;
-
-    case 3:
-        cout << "Introducir Puntos de la tercera coordenada" << endl;
-        cin >> puntos;
-        break;
-
-    case 4:
-        break;
-    }
-}
-
-void Menu::mostrarLado1(){
-
-    cout<<"Lado 1"<< e1.mostrarLado1() <<endl;
+        cin>>y1;
+        distancia = sqrt(pow(x2-x1,2)+pow(y2-y1,2));
+        cout<<"La distancia de AB es= "<<distancia<<endl;
     
+        
+        
+
+    
+        cout<<"Introducir Puntos de la primera coordenada para calcular lado BC" <<endl;
+        cout << endl;
+        {
+       cout<<"1. Valor x2"<<endl;
+        cin>>x2;
+        cout<<"2. Valor x1"<<endl;
+        cin>>x1;
+        cout<<"3. Valor y2"<<endl;
+        cin>>y2;
+        cout<<"4. Valor y1"<<endl;
+        cin>>y1;
+        distancia = sqrt(pow(x2-x1,2)+pow(y2-y1,2));
+        cout<<"La distancia de BC es= "<<distancia<<endl;
+        
+        
+
+    
+        cout<<"Introducir Puntos de la primera coordenada para calcular lado CA" <<endl;
+        cout << endl;
+        cout<<"1. Valor x2"<<endl;
+        cin>>x2;
+        cout<<"2. Valor x1"<<endl;
+        cin>>x1;
+        cout<<"3. Valor y2"<<endl;
+        cin>>y2;
+        cout<<"4. Valor y1"<<endl;
+        cin>>y1;
+        distancia = sqrt(pow(x2-x1,2)+pow(y2-y1,2));
+        cout<<"La distancia de CA es= "<<distancia<<endl;
+        
+      
+        break;
+     
+       }
+
+    }    
+
 }
+
+
+

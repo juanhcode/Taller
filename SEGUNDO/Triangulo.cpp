@@ -32,6 +32,13 @@ Triangulo::Triangulo(){
 double Triangulo::calcularLado1()
 {   
     //calcula las restas
+
+    /* double restaX = 0;
+       double restaY = 0; 
+
+       restaX = x2-x1;
+       restaY = y2-y1;
+    */
     double x = 0; //completarlo                    
     double y = 0; //completarlo
 

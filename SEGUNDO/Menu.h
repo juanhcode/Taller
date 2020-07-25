@@ -21,6 +21,7 @@ class Menu
         void mostrarLado1();
 		
 		
+		
 	protected:
 		//Lo utilizaremos cuando trabajemos con herencia.
 		
@@ -32,6 +33,7 @@ class Menu
         Punto p2;
         Punto p3;
 		double perimetro, area, altura;
+		
 };
 
 #endif //__CLASSMENU
