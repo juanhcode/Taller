@@ -32,34 +32,43 @@ Triangulo::Triangulo(){
 double Triangulo::calcularLado1()
 {   
     //calcula las restas
-    double valorX = 0, x2 = 0; //completarlo                    
-    double valorY = 0,y2 = 0; //completarlo
+    double x = 0; //completarlo                    
+    double y = 0; //completarlo
+
+    /*
+    double x1,x2,y1,y2,distancia = 0;
+	
+	distancia = sqrt(pow(x2-x1,2)+pow(y2-y1,2));
+    */
+
+    
     //calcula la distancia
     double distancia = 0; //completarlo
-    distancia =sqrt(pow(x2-valorX,2.)+pow(y2-valorY,2.));
+    distancia =sqrt(pow(calcularLado2() - x,2)+pow(calcularLado2() - y,2));
     return distancia;
 }
+
 
 double Triangulo::mostrarLado1(){
     return calcularLado1();
 }
 double Triangulo::calcularLado2()
 {
-    double x1 = 0,x2 = 0;
-    double y1 = 0,y2 = 0;
+    double x = 0;
+    double y = 0;
     //calcula la distancia
     double distancia = 0;
-    distancia =sqrt(pow(x2-x1,2.)+pow(y2-y1,2.));
+    distancia =sqrt(pow(calcularLado3(),2.)+pow(x - y,2.));
     return distancia;
 }
 
 double Triangulo::calcularLado3()
 {
-    double x1 = 0,x2 = 0;
-    double y1 = 0,y2 = 0;
+    double x = 0;
+    double y = 0;
     //calcula la distancia
-     double distancia = 0;
-    distancia =sqrt(pow(x2-x1,2.)+pow(y2-y1,2.));
+    double distancia = 0;
+    distancia =sqrt(pow(x - y,2.)+pow(calcularLado1(),2.));
     return distancia;
 }
 
