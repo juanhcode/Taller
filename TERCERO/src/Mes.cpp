@@ -14,7 +14,7 @@ Mes::~Mes(){
 
 
 void Mes:: darMes(){
-
+    mes;
 }
 
 int Mes::calcularDiferenciaMeses(Mes otroMes){

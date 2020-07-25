@@ -24,8 +24,17 @@ int CuentaCorriente::darSaldoCC()
 
 void CuentaCorriente::consignarSaldo(int consignacion)
 {
+    if(saldo <= consignacion)
+    {
+        saldo += consignacion;
+    }
+    else{
+        cout << "no se pudo realizar la operacion" << endl;
+    }
+    system("pause");
 
-    saldo += consignacion;
+ 
+    
 }
 //////
 
@@ -33,7 +42,7 @@ void CuentaCorriente::consignarSaldo(int consignacion)
 void CuentaCorriente::retirarSaldo(int descontar)
 {
 
-    if (saldo > descontar)
+    if (saldo >= descontar)
     {
         saldo -= descontar;
     }
@@ -41,5 +50,6 @@ void CuentaCorriente::retirarSaldo(int descontar)
     {
         cout << "no se pudo realizar la operacion" << endl;
     }
-    system("cls");
+    system("pause");
+
 }

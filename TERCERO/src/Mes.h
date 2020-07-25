@@ -21,7 +21,7 @@
 */
 class Mes
 {
-private:
+private: 
     int mes;
 public:
     Mes(int dMes);

@@ -26,6 +26,8 @@ private:
 public:
     CDT();
     ~CDT();
+    int darValorIn();
+    double darInteresMensual();
 };
 
 #endif // __CLASCDT

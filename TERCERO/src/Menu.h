@@ -36,6 +36,7 @@ private:
   CuentaAhorros CuentaAho;
   CDT cDT;
   Mes mEs;
+  int saldoTotal;
 
 public:
   Menu();
@@ -45,8 +46,9 @@ public:
   void mostrarDatosPersonales();
   void mostrarCalculos();
   void mostrarCalculosCA();
+  void mostrarCalculosF();
   void auxiliar();
-
+  void mostrarInCDT();
 
 };
 

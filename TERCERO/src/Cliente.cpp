@@ -1,6 +1,6 @@
 #include "Cliente.h"
 #include <iostream>
-
+#include "math.h"
 using namespace std;
 
 
@@ -21,8 +21,7 @@ Cliente::Cliente(string dNombre,
 }
 
 Cliente::Cliente(){
-
-
+    
 }
 
 Cliente::~Cliente()
@@ -69,24 +68,6 @@ int Cliente::darCuentaAhorro(){
 
     return cCAhorros.darSaldoCA();
 }
-//
-
-// CUENTA CDT
-
-void Cliente::invertirCDT(int,double){
-
-}
-
-void Cliente::cerrarCDT(){
-
-}
-//
-
-//saldo total 
-double Cliente::saldoTotal(){
-
-}
-//
 
 void Cliente::interesMensualCA(){
     int mult;
@@ -94,6 +75,33 @@ void Cliente::interesMensualCA(){
     mult = ((cCAhorros.darSaldoCA() * 0.006) - cCAhorros.darInteresMensual());
 
 }
+//
+
+// CUENTA CDT
+
+void Cliente::invertirCDT(int dineroCDT,double interesM,int cantidadM){
+
+    pow(dineroCDT,2)+(interesM * cantidadM);
+
+}
+
+/*int Cliente::calcularMes(int cantidadM){
+
+    //calcularMes(cantidadM);
+    return calcularMes(cantidadM);
+}*/
+
+
+void Cliente::cerrarCDT(){
+
+}
+//
+// SALDO TOTAL 
+double Cliente::saldoTotal(){
+    
+    cCorriente.darSaldoCC() + cCAhorros.darSaldoCA();
+}
+//
 
 /*Mes Cliente::darMesActualSimulacion(){
 

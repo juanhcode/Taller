@@ -1,5 +1,7 @@
 #include "Menu.h"
 #include <cstdlib>
+#include <iostream>
+using namespace std;
 
 Menu::Menu()
 {
@@ -10,6 +12,7 @@ Menu::Menu()
 	mEs = Mes(7);
 	Cliente primero("Juan", "100123", CuentaCo, CuentaAho, cDT, mEs);
 	e1 = primero;
+	saldoTotal = 0;
 }
 
 Menu::~Menu()
@@ -24,22 +27,27 @@ void Menu::seleccionarOpcion()
 	cout << "1 - Cuenta Corriente" << endl;
 	cout << "2 - Cuenta Ahorro" << endl;
 	cout << "3 - CDT" << endl;
-	cout << "4 - Avanzar mes por mes en el Tiempo" << endl;
-	cout << "5 - Salir" << endl;
+	cout << "4 - Avanzar mes por mes" << endl;
+	cout << "5 - Saldo total" << endl;
+	cout << "6 - Salir" << endl;
 	do
 	{
 		cout << "Introduza Opcion: ";
 		cin >> opcion;
-	} while (!((opcion >= 1) && (opcion <= 5)));
+	} while (!((opcion >= 1) && (opcion <= 6)));
 }
 
 void Menu::visualizar()
 {
 	int saldoCC = 0;
 	int saldoCA = 0;
+	int dineroCDT = 0;
+	double interesM = 0;
+	int cantidadM = 0;
 	do
 	{
 		mostrarDatosPersonales();
+		mostrarCalculosF();
 		seleccionarOpcion();
 		{
 			switch (opcion)
@@ -49,7 +57,7 @@ void Menu::visualizar()
 				cout << "1. Depositar" << endl;
 				cout << "2. Retirar" << endl;
 				cout << "3. Volver al menu" << endl;
-				cout << "Intruduzca una opcion" << endl;
+				cout << "Introduzca una opcion" << endl;
 				cin >> opcion;
 				switch (opcion)
 				{
@@ -101,13 +109,32 @@ void Menu::visualizar()
 			case 3:
 				cout << "1. Invertir Dinero" << endl;
 				cout << "2. Cerrar Cuenta" << endl;
-				cout << "Intruoduzca una opcion" << endl;
+				cout << "Intruduzca una opcion" << endl;
 				cin >> opcion;
 				switch (opcion)
 				{
 				case 1:
-					cout << "Cantidad de dinero a invertir" << endl;
-					cin >> opcion;
+					mostrarInCDT();
+					cout << "1.Cantidad de dinero / interes mensual" << endl;
+					cout << "2.Cantidad de Meses" << endl;
+					switch (opcion)
+					{
+					case 1:
+						cout << "Digite la cantidad de dinero que quiere invertir" << endl;
+						cin >> dineroCDT;
+						cout << "Digite el interes mensual" << endl;
+						cin >> interesM;
+						e1.invertirCDT(dineroCDT, interesM, cantidadM);
+						break;
+
+					case 3:
+						cout << "Digite la cantidad de Meses" << endl;
+						cin >> cantidadM;
+						break;
+
+					default:
+						break;
+					}
 					break;
 				case 2:
 					cout << "Desea cerrar la cuenta" << endl;
@@ -120,11 +147,16 @@ void Menu::visualizar()
 
 			case 4:
 				break;
+
+			case 5:
+				saldoTotal = e1.saldoTotal();
+				break;
 			}
+
 			system("cls");
 		}
 
-	} while (opcion != 5);
+	} while (opcion != 6);
 }
 
 void Menu::mostrarDatosPersonales()
@@ -144,3 +176,16 @@ void Menu::mostrarCalculosCA()
 
 	cout << "Saldo: " << e1.darCuentaAhorro() << endl;
 }
+
+void Menu::mostrarInCDT()
+{
+
+	//cout << "Saldo con interes: " << e1.invertirCDT() << endl;
+}
+void Menu::mostrarCalculosF()
+{
+	
+	cout << "saldo total = " << e1.saldoTotal() << endl;
+	
+}
+

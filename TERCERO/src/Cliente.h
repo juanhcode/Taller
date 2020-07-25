@@ -51,8 +51,12 @@ public:
     void interesMensualCA();
     //
     //CUENTA CDT
-    void invertirCDT(int,double);
+    void invertirCDT(int dineroCDT,double interesM,int cantidadM);
+    //int calcularMes(int cantidadM);
     void cerrarCDT();
+    int mostrarInvertirCDT();
+    //double darInteresMensualCD();
+    //int darMesCD();
     //
     //SALDO TOTAL SUMA DE LOS 3 PRODUCTOS
     double saldoTotal();

@@ -1,4 +1,6 @@
 #include "CuentaAhorros.h"
+#include <iostream>
+using namespace std;
 
 CuentaAhorros::CuentaAhorros(int dSaldo,double dInteresMensual)
 {
@@ -20,12 +22,29 @@ int CuentaAhorros::darSaldoCA(){
 }
 
 void CuentaAhorros::consignarSaldoCA(int consignarCA){
-    saldo = saldo + consignarCA;
+
+    if(saldo <= consignarCA)
+    {
+        saldo = saldo + consignarCA;
+    }
+    else{
+        cout << "no se pudo realizar la operacion" << endl;
+    }
+    system("pause");
 }
 ///Retirar
 void CuentaAhorros::retirarCuentaAhorro(int descontarCA){
 
-    saldo -= descontarCA;
+    if (saldo >= descontarCA)
+    {
+        saldo -= descontarCA;
+    }
+    else
+    {
+        cout << "no se pudo realizar la operacion" << endl;
+    }
+    system("pause");
+    
 }
 //
 
